@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 9 Dirty Details of OpenAI's War With Moonshot AI in 2026 (They Caught the Homework Thieves) | LORD RACHIT</title>
+<meta name="description" content="OpenAI accused Moonshot AI's users of siphoning its models' reasoning data in a distillation campaign. How the homework thieves got caught, and what it means for the open-model wars.">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.75;color:#1a1a1a;max-width:680px;margin:0 auto;padding:2rem 1.25rem;background:#fff}
+header.site{border-bottom:1px solid #eee;margin-bottom:2.5rem;padding-bottom:1rem}
+header.site a{color:#1a1a1a;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.05em}
+header.site p{color:#666;font-size:.9rem;margin:.25rem 0 0}
+article h1{font-size:2rem;line-height:1.25;margin-bottom:.25rem}
+article h2{font-size:1.4rem;margin-top:2.2rem}
+article img{max-width:100%;height:auto;border-radius:6px}
+article time{color:#888;font-size:.9rem}
+article p{margin:1.1rem 0}
+article ul{padding-left:1.4rem}
+article hr{border:none;border-top:1px solid #ddd;margin:2.5rem 0}
+footer.site{border-top:1px solid #eee;margin-top:3rem;padding-top:1rem;color:#888;font-size:.85rem}
+footer.site a{color:#555}
+</style>
+</head>
+<body>
+<header class="site"><a href="/">LORD RACHIT</a><p>Brutally honest AI articles. No press releases, no benchmark worship.</p></header>
+<main><article>
+<time datetime="2026-10-01">2026-10-01</time>
+<h1>The 9 Dirty Details of OpenAI's War With Moonshot AI in 2026 (They Caught the Homework Thieves)</h1>
+<p><em>OpenAI just accused the makers of Kimi of running a covert operation to steal the one thing it guards hardest. The method was equal parts brilliant and embarrassing.</em></p>
+<p><img alt="OpenAI logo on a phone screen" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-01/1-1.jpg" />
+<em>Photo via Unsplash</em></p>
+<p>Let's stop pretending the AI race is about who hires the smartest researchers.</p>
+<p>Here's the uncomfortable truth: <strong>it is about who copies fastest without getting caught.</strong> And this week, somebody got caught.</p>
+<p>This article is not a legal explainer about distillation. It is about the most brazen homework-copying operation ever caught red-handed, and what it tells you about where the AI war is really being fought.</p>
+<h2>1. The accusation, in plain English</h2>
+<p>On Wednesday, <strong>OpenAI</strong> published a blog post accusing people linked to <strong>Moonshot AI</strong>, the Beijing lab behind the <strong>Kimi</strong> chatbot, of running a coordinated campaign to extract hidden reasoning from its models.</p>
+<ul>
+<li>Not scraping. Not API abuse. <strong>Targeted extraction of the protected reasoning layer.</strong></li>
+<li>OpenAI calls it <strong>"adversarial distillation."</strong></li>
+<li>This is one of the most direct public accusations a US lab has ever leveled at a specific Chinese competitor.</li>
+</ul>
+<p><strong>The so what: OpenAI named names.</strong> That almost never happens, which tells you how confident they are.</p>
+<p><em>(Source: <a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/">OpenAI's blog post</a>)</em></p>
+<h2>2. What "adversarial distillation" actually means</h2>
+<p>Forget the jargon. Distillation is when you use one model's outputs to train another model. It is the AI equivalent of copying someone's homework and changing a few words.</p>
+<ul>
+<li>Normal distillation: train your small model on a big model's answers. Common, mostly tolerated, everyone does it.</li>
+<li><strong>Adversarial distillation</strong>: deliberately trick the big model into revealing the hidden thinking it was told not to show you.</li>
+<li>The hidden reasoning is the secret sauce. The final answer is the cake. They were after the recipe.</li>
+</ul>
+<p><strong>The so what: they were not stealing text, they were stealing thought patterns.</strong></p>
+<h2>3. The numbers are genuinely wild</h2>
+<p>This was not two guys in a basement. Look at the scale <strong>OpenAI</strong> reported:</p>
+<ul>
+<li>Activity began in the <strong>first week of July 2026</strong>.</li>
+<li>On <strong>July 24 and 25</strong>, it spiked to <strong>16,000 requests from more than 4,000 users</strong> in two days.</li>
+<li>By <strong>July 28</strong>, a cluster of <strong>over 15,000 users</strong> was firing similar prompts.</li>
+</ul>
+<p><em>Fifteen thousand accounts, all asking the same sneaky questions.</em> That is not curiosity. That is an operation.</p>
+<p><strong>The so what: industrial scale means industrial intent.</strong></p>
+<p><em>(Source: <a href="https://wccftech.com/moonshot-ai-of-kimi-k3-fame-tried-to-crack-openais-encrypted-reasoning-through-16000-requests-bolstering-trump-administrations-distillation-claims/">Wccftech's timeline breakdown</a>)</em></p>
+<h2>4. The trick itself deserves respect (and a laugh)</h2>
+<p>Here is my favorite detail, straight from <strong>OpenAI's</strong> own writeup:</p>
+<blockquote>
+<p>"We saw operators attempt to extract protected reasoning in novel ways, including by copying encrypted reasoning from one conversation and asking a model in another conversation to decrypt and transcribe the hidden reasoning content," OpenAI said.</p>
+</blockquote>
+<p>Read that again. They copied the encrypted blob, pasted it into a fresh chat, and asked the model to <strong>please decrypt itself</strong>.</p>
+<ul>
+<li>It is like photocopying a locked diary and asking the diary to read itself aloud.</li>
+<li><em>The audacity is honestly impressive.</em></li>
+<li>And apparently it worked well enough to keep trying 16,000 times.</li>
+</ul>
+<p><strong>The so what: <u>the attack was social engineering aimed at a machine.</u></strong></p>
+<h2>5. What they did NOT do matters too</h2>
+<p><strong>OpenAI</strong> was careful to say the operators never broke its encryption and never touched its databases or anyone's stored conversations.</p>
+<ul>
+<li>No hack in the Hollywood sense. No breached servers.</li>
+<li>The models were manipulated through conversation alone.</li>
+<li>This is the part that should worry every lab: <strong>your moat is a prompt away from being drained.</strong></li>
+</ul>
+<p><strong>The so what: the vulnerability is the product working as designed.</strong></p>
+<h2>6. OpenAI got tipped off by academics</h2>
+<p>My second favorite detail: <strong>OpenAI</strong> did not catch this with its own superhuman security. It got a heads-up from independent researchers writing a paper on cross-model vulnerabilities.</p>
+<ul>
+<li>The researchers disclosed their findings. OpenAI recreated the attack paths.</li>
+<li>Then it found the real campaign already running in its logs.</li>
+<li><em>The security team at the world's most valuable AI lab got schooled by a paper draft.</em></li>
+</ul>
+<p><strong>The so what: <u>openness cuts both ways, and this time it saved them.</u></strong></p>
+<p><em>(Source: <a href="https://finance.biggo.com/news/75671352-8517-4536-9603-7a4a32439e25">coverage of the researchers' responsible disclosure</a>)</em></p>
+<h2>7. This is the second punch, not the first</h2>
+<p>A few weeks earlier, <strong>Anthropic</strong> accused Chinese labs including <strong>Moonshot AI</strong> and <strong>Alibaba</strong> of using <strong>Claude</strong> to help train their own systems.</p>
+<ul>
+<li>Two US frontier labs, same accused lab, same stretch of weeks.</li>
+<li><strong>Moonshot</strong> and Chinese officials have rejected similar accusations before.</li>
+<li>Whether every claim holds up, the pattern of smoke is getting hard to ignore.</li>
+</ul>
+<p><strong>The so what: this is now a US versus China storyline, not a one-off incident.</strong></p>
+<p><em>(Source: <a href="https://stocktwits.com/news-articles/markets/equity/open-ai-accuses-kimi-operator-china-s-moonshot-ai-of-copying-ai-model-reasoning/cZDiqBPRBLq">Benzinga on Anthropic's parallel accusations</a>)</em></p>
+<h2>8. There is academic backup, and it is damning</h2>
+<p>A recent study fed just <strong>1% of decoded reasoning fragments</strong> from <strong>Claude Opus 4.8</strong> into <strong>Kimi K3</strong>. The result:</p>
+<ul>
+<li><strong>Kimi K3's</strong> thinking and final answers shifted measurably toward <strong>Claude's</strong> style and phrasing.</li>
+<li>Extracting reasoning fragments from <strong>Kimi K3</strong> was roughly <strong>six orders of magnitude</strong> easier than from the next-closest model.</li>
+<li>Translation: the fingerprints were all over it.</li>
+</ul>
+<p><em>One percent. That is not a coincidence, that is a confession written in statistics.</em></p>
+<p><strong>The so what: you can run, but the math remembers.</strong></p>
+<p><em>(Source: <a href="https://wccftech.com/kimi-k3-shows-an-uncanny-affinity-to-the-reasoning-patterns-of-claude-opus-as-a-new-study-hands-the-trump-administration-a-smoking-gun/">Wccftech on the study</a>)</em></p>
+<h2>9. Why OpenAI is swinging now</h2>
+<p>Timing is everything. <strong>Kimi</strong> has been eating mindshare, <strong>DeepSeek</strong> and <strong>MiniMax</strong> are shipping cheaper open-weight models, and the cost pressure on US labs is very real.</p>
+<ul>
+<li><strong>OpenAI</strong> says it shared its findings with industry and government partners.</li>
+<li>Translation: this is now a policy fight, not just a technical one.</li>
+<li>Expect tighter API terms, export-control chatter, and a lot of stern letters.</li>
+</ul>
+<p><strong>The so what: <u>the distillation war just became the trade war.</u></strong></p>
+<p><em>(Source: <a href="https://fourweekmba.com/ai-openai-moonshot-ai-reasoning-extraction/">FourWeekMBA's analysis of the disclosure</a>)</em></p>
+<h2>How to start (pick your lane)</h2>
+<p><strong>If you build with models:</strong></p>
+<ul>
+<li>Audit anywhere your pipeline learns from a closed model's outputs. Terms of service are starting to have teeth.</li>
+<li>Treat another lab's reasoning traces like radioactive material. Useful, but handle with gloves.</li>
+<li>Build evals that detect style convergence with competitor models. Researchers did it with 1% of fragments. You can too.</li>
+</ul>
+<p><strong>If you write about AI:</strong></p>
+<ul>
+<li>Stop calling everything "open source" when you mean "open weights trained on someone else's homework." Words matter.</li>
+<li>Follow the academic crowd, not just company blogs. The best stories now come from papers first.</li>
+</ul>
+<p><strong>If you just use the tools:</strong></p>
+<ul>
+<li>Nothing changes for you today. But know that the cheap model you love might be cheap because someone else paid the research bill.</li>
+</ul>
+<h2>The real pattern</h2>
+<p>Every AI lab is simultaneously the cop and the robber. The only difference is who writes the blog post first.</p>
+<h2>Final thoughts</h2>
+<p>Distillation is not going away. It is too useful and too hard to detect.</p>
+<p>Watch what happens to API terms of service in the next 90 days. That is where this war gets fought next.</p>
+<p><em>Yes, AI helped write this. It did the typing. I gave the ideas and I did the editing and orchestrating.</em></p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>© 2026 LORD RACHIT · <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a> · Written with AI assistance, edited and orchestrated by a human.</p></footer>
+</body>
+</html>
