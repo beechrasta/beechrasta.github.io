@@ -3,26 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The 8 Numbers Behind OpenAI's $20B Revenue Rewrite in 2026 (Check the Denominator) | LORD RACHIT</title>
+<title>The 8 Numbers Behind OpenAI's $20B Revenue Rewrite in 2026 (Check the Denominator) | Rachit Asthana's Articles</title>
 <meta name="description" content="OpenAI rewrote its revenue story to $20 billion, but the denominator is doing a lot of work. Eight numbers that show what is really being counted.">
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.75;color:#1a1a1a;max-width:680px;margin:0 auto;padding:2rem 1.25rem;background:#fff}
-header.site{border-bottom:1px solid #eee;margin-bottom:2.5rem;padding-bottom:1rem}
-header.site a{color:#1a1a1a;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.05em}
-header.site p{color:#666;font-size:.9rem;margin:.25rem 0 0}
+:root{--bg:#fff;--text:#1a1a1a;--muted:#666;--border:#eee;--card:#fafafa}
+[data-theme="dark"]{--bg:#121212;--text:#e8e8e8;--muted:#a8a8a8;--border:#2b2b2b;--card:#1a1a1a}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.75;color:var(--text);max-width:680px;margin:0 auto;padding:0 1.25rem 2rem;background:var(--bg)}
+nav.top{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;border-bottom:1px solid var(--border);margin-bottom:2rem}
+nav.top .brand{color:var(--text);text-decoration:none;font-weight:800;font-size:1.05rem}
+nav.top .links{display:flex;gap:1rem;align-items:center}
+nav.top .links a{color:var(--muted);text-decoration:none;font-size:.95rem}
+nav.top .links a:hover{color:var(--text)}
+#theme-toggle{background:none;border:1px solid var(--border);border-radius:6px;cursor:pointer;font-size:1rem;padding:.15rem .5rem;color:var(--text)}
 article h1{font-size:2rem;line-height:1.25;margin-bottom:.25rem}
 article h2{font-size:1.4rem;margin-top:2.2rem}
 article img{max-width:100%;height:auto;border-radius:6px}
-article time{color:#888;font-size:.9rem}
+article time{color:var(--muted);font-size:.9rem}
 article p{margin:1.1rem 0}
 article ul{padding-left:1.4rem}
-article hr{border:none;border-top:1px solid #ddd;margin:2.5rem 0}
-footer.site{border-top:1px solid #eee;margin-top:3rem;padding-top:1rem;color:#888;font-size:.85rem}
-footer.site a{color:#555}
+article hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0}
+.idx-row{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--border)}
+.idx-row .t{flex:1;min-width:0}
+.idx-row .t a{color:var(--text);text-decoration:none;font-weight:600}
+.idx-row .t a:hover{text-decoration:underline}
+.idx-row time{display:block;color:var(--muted);font-size:.8rem}
+.copy-btn{background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;font-size:.85rem;padding:.35rem .8rem;white-space:nowrap}
+.copy-btn:hover{border-color:var(--muted)}
+.home-list article.post{margin:2rem 0;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.home-list h2{font-size:1.25rem;margin:0 0 .3rem;line-height:1.35}
+.home-list h2 a{color:var(--text);text-decoration:none}
+.home-list h2 a:hover{text-decoration:underline}
+.home-list time{color:var(--muted);font-size:.85rem}
+.home-list p{color:var(--muted);margin:.5rem 0 0}
+footer.site{border-top:1px solid var(--border);margin-top:3rem;padding-top:1rem;color:var(--muted);font-size:.85rem}
+footer.site a{color:var(--muted)}
 </style>
 </head>
 <body>
-<header class="site"><a href="/">LORD RACHIT</a><p>Brutally honest AI articles. No press releases, no benchmark worship.</p></header>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
 <main><article>
 <time datetime="2026-10-09">2026-10-09</time>
 <h1>The 8 Numbers Behind OpenAI's $20B Revenue Rewrite in 2026 (Check the Denominator)</h1>
@@ -119,6 +137,14 @@ footer.site a{color:#555}
 <p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
 <p>Follow along. Clap if it earned it.</p>
 </article></main>
-<footer class="site"><p>© 2026 LORD RACHIT · <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a> · Written with AI assistance, edited and orchestrated by a human.</p></footer>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
 </body>
 </html>
