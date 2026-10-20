@@ -24,6 +24,8 @@ article hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0}
 .idx-row time{display:block;color:var(--muted);font-size:.8rem}
 .copy-btn{background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;font-size:.85rem;padding:.35rem .8rem;white-space:nowrap}
 .copy-btn:hover{border-color:var(--muted)}
+.idx-row .btns{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+.copy-btn.mini{padding:.35rem .55rem;font-size:.8rem}
 .home-list article.post{margin:2rem 0;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
 .home-list h2{font-size:1.25rem;margin:0 0 .3rem;line-height:1.35}
 .home-list h2 a{color:var(--text);text-decoration:none}
