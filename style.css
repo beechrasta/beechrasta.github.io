@@ -31,6 +31,10 @@ article hr{border:none;border-top:1px solid var(--border);margin:1.75rem 0}
 .idx-row .tags{display:flex;flex-wrap:wrap;gap:.35rem}
 .idx-row .tag{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:.22rem .6rem;font-size:.78rem;color:var(--text);cursor:pointer;white-space:nowrap}
 .idx-row .tag:hover{border-color:var(--muted)}
+.idx-num{color:var(--muted);font-weight:700;margin-right:.45rem}
+#hide-done{background:none;border:1px solid var(--border);border-radius:6px;cursor:pointer;font-size:.85rem;padding:.2rem .55rem;color:var(--text)}
+#hide-done.on{background:#e6f4ea;border-color:#34a853;color:#137333}
+[data-theme="dark"] #hide-done.on{background:#12351f;border-color:#34a853;color:#7bd88f}
 .done-btn.done-on{background:#e6f4ea;border-color:#34a853;color:#137333;font-weight:600}
 [data-theme="dark"] .done-btn.done-on{background:#12351f;border-color:#34a853;color:#7bd88f}
 .home-list article.post{margin:1.25rem 0;padding-bottom:1rem;border-bottom:1px solid var(--border)}
