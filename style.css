@@ -26,6 +26,9 @@ article hr{border:none;border-top:1px solid var(--border);margin:1.75rem 0}
 .copy-btn:hover{border-color:var(--muted)}
 .idx-row .btns{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end;align-items:center}
 .copy-btn.mini{padding:.35rem .55rem;font-size:.8rem}
+.idx-row .tags{margin-top:.4rem;display:flex;flex-wrap:wrap;gap:.3rem}
+.idx-row .tag{background:var(--card);border:1px solid var(--border);border-radius:999px;padding:.08rem .55rem;font-size:.75rem;color:var(--muted);cursor:pointer;white-space:nowrap}
+.idx-row .tag:hover{color:var(--text);border-color:var(--muted)}
 .home-list article.post{margin:1.25rem 0;padding-bottom:1rem;border-bottom:1px solid var(--border)}
 .home-list h2{font-size:1.25rem;margin:0 0 .3rem;line-height:1.35}
 .home-list h2 a{color:var(--text);text-decoration:none}
