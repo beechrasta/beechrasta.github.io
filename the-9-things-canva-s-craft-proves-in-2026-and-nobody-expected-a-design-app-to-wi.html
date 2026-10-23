@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 9 Things Canva's Craft Proves in 2026, and Nobody Expected a Design App to Win | Rachit Asthana's Articles</title>
+<meta name="description" content="Canva just launched Craft, its first in-house AI image model, and it plans the layout before drawing a single pixel. Here is what that means for anyone who makes posters, thumbnails, or social graphics.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-10-23">2026-10-23</time>
+<h1>The 9 Things Canva's Craft Proves in 2026, and Nobody Expected a Design App to Win</h1>
+<p><em>Forget prettier pixels. The real war in AI images is about who controls the layout, and Canva just made its move.</em></p>
+<p><img alt="Canva homepage under a magnifying glass" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-23/canva-site-homepage.jpg" />
+<em>Canva's homepage, up close. The design giant just stopped renting other labs' models and built its own. Photo: Jernej Furman, CC BY 2.0, via Wikimedia Commons</em></p>
+<p>Let's stop pretending the AI image race is about who makes the prettiest picture.</p>
+<p>Here is the uncomfortable truth: <strong>most AI-generated images are useless the moment you need to change the headline.</strong> They look great and edit terribly.</p>
+<p>This article is not a list of Craft's features. It is about why a design app building its own image model changes who wins.</p>
+<h2>1. Canva stopped renting and started owning</h2>
+<ul>
+<li>On <strong>October 22, 2026</strong>, Canva launched <strong>Craft</strong>, the first image generation model it built and trained from scratch</li>
+<li>It comes from <strong>Canva Research</strong>, the company's in-house AI lab, and it is live for every Canva user inside <strong>Dream Lab</strong>, plus a public API for developers</li>
+<li>Until now, Canva leaned on other companies' models. Dream Lab launched in October 2024 running on <strong>Phoenix</strong>, the model from <strong>Leonardo.ai</strong>, the Sydney startup Canva acquired that year. Researchers from Leonardo worked on Craft too</li>
+</ul>
+<p>So what: <strong>the landlord just became a homeowner.</strong> When you serve hundreds of millions of users, renting someone else's model is a tax you eventually refuse to pay.</p>
+<p><em>(Source: <a href="https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model">The Verge</a>; <a href="https://madrobot.blog/2026/10/22/canva-craft-ai-image-model-dream-lab-canva-research/">madrobot.blog</a>)</em></p>
+<h2>2. It plans the picture before it paints it</h2>
+<ul>
+<li>Most image models turn a prompt straight into pixels. Craft splits the job in two</li>
+<li>First, a <strong>planning model</strong> reads your prompt and writes a detailed plan: which elements appear, where they sit, their relative sizes, what matters most, and any text that must appear</li>
+<li>Then a separate <strong>rendering model</strong> turns that plan into a finished image at up to <strong>2K resolution</strong>, in more than <strong>30 aspect ratios</strong> or a custom size</li>
+</ul>
+<p>So what: <strong>an architect who sketches before building beats a painter who improvises.</strong> Planning first is why Craft can place objects where you asked instead of where it felt like.</p>
+<p><em>(Source: <a href="https://www.digitaltrends.com/computing/canva-craft-ai-image-generation-model-launch/">Digital Trends</a>; <a href="https://xenospectrum.com/en/canva-craft-image-planning-editable-layers/">XenoSpectrum</a>)</em></p>
+<h2>3. Text is the whole game, and photos were the wrong teacher</h2>
+<ul>
+<li>Ask any image model for a poster with a headline and watch it spell like a tired toddler. <strong>Legible text</strong> is the hardest problem in image generation</li>
+<li>Craft was trained on <strong>millions of human-made Canva templates</strong>, posters, social posts, presentations, infographics, menus, diagrams, instead of mainly photographs</li>
+<li>It can write text into images in <strong>55 languages</strong>, and you can prompt it in any language</li>
+</ul>
+<p><u>Photos teach a model what things look like. Templates teach it how information is arranged. That is the entire difference.</u></p>
+<p>Honest caveat, straight from Canva: <strong>small text and technical drawings</strong> are still areas to improve. They said it themselves, which is more than most labs do.</p>
+<p><em>(Source: <a href="https://xenospectrum.com/en/canva-craft-image-planning-editable-layers/">XenoSpectrum</a>; <a href="https://www.digitaltrends.com/computing/canva-craft-ai-image-generation-model-launch/">Digital Trends</a>)</em></p>
+<h2>4. Designers trained it, not just data centers</h2>
+<ul>
+<li>After pretraining, Canva applied supervised fine-tuning and reinforcement learning with feedback from <strong>professional designers</strong></li>
+<li>In internal evaluation, designers and researchers compared more than <strong>25,000 pairs of images</strong> head to head</li>
+<li>Where automated metrics and human judgment disagreed, <strong>Canva gave priority to the designers' judgment</strong></li>
+</ul>
+<p>So what: <strong>benchmarks measure what is easy to measure.</strong> Canva let working designers overrule the scoreboard, which is exactly the kind of heresy the industry needs.</p>
+<p><em>(Source: <a href="https://xenospectrum.com/en/canva-craft-image-planning-editable-layers/">XenoSpectrum</a>)</em></p>
+<p><img alt="The Canva logo" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-23/canva-logo.jpg" />
+<em>The Canva logo. Craft is the first image model Canva Research built from scratch instead of licensing. Photo: KaiLEK54, CC0, via Wikimedia Commons</em></p>
+<h2>5. The image is not the product. The layers are.</h2>
+<ul>
+<li>Craft generates the image, then <strong>Magic Layers</strong>, an existing Canva feature, breaks it into editable pieces: text, objects, background</li>
+<li>Canva Research trained a <strong>learned decomposition model</strong> that understands the elements and layers inside a composition, and pairs it with a font library so text returns to editable form instead of staying a cluster of pixels</li>
+<li>Change one element and the surrounding areas do not need to be redrawn, which is the thing every marketer has screamed at their screen about</li>
+</ul>
+<p>So what: <strong>a flat image is a dead end. A layered design is a starting point.</strong> Canva is selling the edit, not the render.</p>
+<p><em>(Source: <a href="https://xenospectrum.com/en/canva-craft-image-planning-editable-layers/">XenoSpectrum</a>; <a href="https://aidailypost.com/news/canvas-craft-first-ai-image-model">AI Daily Post</a>)</em></p>
+<h2>6. It is built for the revision loop, not the wow loop</h2>
+<ul>
+<li>Real production work is generate, revise, repeat. Every round costs <strong>waiting time and compute</strong>, and at Canva's scale, more than <strong>one billion designs a month</strong>, a few cents per generation adds up fast</li>
+<li>Canva used <strong>model distillation</strong> to cut the inference steps needed, and built its own engine for the planning stage</li>
+<li>Faster versions, <strong>Craft-fast and Craft-ultrafast</strong>, are already on the roadmap</li>
+</ul>
+<p><u>Owning the model means owning the cost curve.</u> That is the sentence that should worry every API reseller in the design space.</p>
+<p>Fair note: Canva gave <strong>no specific generation times and no user-facing pricing</strong> for Craft yet. Speed and cost claims are roadmap, not receipts.</p>
+<p><em>(Source: <a href="https://xenospectrum.com/en/canva-craft-image-planning-editable-layers/">XenoSpectrum</a>)</em></p>
+<h2>7. The leaderboard claim, decoded honestly</h2>
+<ul>
+<li>Canva says it is now the world's <strong>second-best AI lab for images</strong> on DesignArena's public leaderboard, behind only OpenAI</li>
+<li>As a single model, Craft sits <strong>fourth</strong>, behind three OpenAI models: GPT-Image-2.5 Sunburst, GPT-Image-2.5 Flare, and GPT-Image-2</li>
+<li>Both can be true at once: lab ranking counts the stable, model ranking counts the horse</li>
+</ul>
+<p>So what: <strong>read leaderboard claims the way you read a resume.</strong> The fine print is where the truth lives, and to Canva's credit, the numbers are public enough to check.</p>
+<p><em>(Source: <a href="https://madrobot.blog/2026/10/22/canva-craft-ai-image-model-dream-lab-canva-research/">madrobot.blog</a>; <a href="https://technewsvision.co.uk/canvas-first-ai-image-model-plans-designs-before-generating-them/">Tech News Vision</a>)</em></p>
+<h2>8. The API and the MCP play are the real story for builders</h2>
+<ul>
+<li>Craft is available through <strong>Canva's public API</strong> for developers right now</li>
+<li>Canva plans to let <strong>AI agents plug into Craft through the open Model Context Protocol</strong>, so assistants can generate on-brand images inside workflows</li>
+<li>It also ships with input and output moderation, privacy and safety controls, and reporting tools</li>
+</ul>
+<p>My angle, personally: <strong>my daily poster pipeline runs on image models, and Petra renders them through my PosterBuilder API.</strong> A design-first model with an API and future MCP support is exactly the kind of brick I want in that wall. I will be testing Craft against my current stack this week.</p>
+<p>So what: <strong>models win benchmarks, platforms win workflows.</strong> Canva is playing the second game.</p>
+<p><em>(Source: <a href="https://technewsvision.co.uk/canvas-first-ai-image-model-plans-designs-before-generating-them/">Tech News Vision</a>; <a href="https://madrobot.blog/2026/10/22/canva-craft-ai-image-model-dream-lab-canva-research/">madrobot.blog</a>)</em></p>
+<p><img alt="Wood letterpress type" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-23/letterpress-type.jpg" />
+<em>Wood letterpress type. Craft's whole bet is that text and layout are the hard part of image generation, not pixels. Photo: Michellecornelison, CC BY-SA 4.0, via Wikimedia Commons</em></p>
+<h2>9. What to do on Monday</h2>
+<ul>
+<li><strong>Creators and marketers:</strong> open Dream Lab from the three-dot menu in Canva and try a text-heavy poster. Compare the headline spelling against whatever you used last week. That single test tells you everything</li>
+<li><strong>Developers:</strong> look at the public API docs and ask whether your image pipeline needs pixels or needs editable designs. If it is the second, this is your model</li>
+<li><strong>Everyone:</strong> check the plan limits before you fall in love. Available to all users does not mean free and unlimited, and Canva has not published Craft pricing yet</li>
+</ul>
+<p>So what: <strong>try the thing that annoys you most about current tools.</strong> If Craft fixes your headline problem, it earned its place. If not, you lost ten minutes.</p>
+<p><em>(Source: <a href="https://technewsvision.co.uk/canvas-first-ai-image-model-plans-designs-before-generating-them/">Tech News Vision</a>; <a href="https://xenospectrum.com/en/canva-craft-image-planning-editable-layers/">XenoSpectrum</a>)</em></p>
+<h2>The real pattern</h2>
+<p>Every AI image lab spent two years racing to make prettier pictures, and Canva noticed that nobody's actual job is "make a pretty picture." The job is "make the poster, then change the date, then change the headline, then ship it." Craft is the first frontier image model designed around the revision, not the render. The labs optimizing for wow are about to learn what every designer already knows: the money was never in the first draft.</p>
+<h2>Final thoughts</h2>
+<p>Canva did not need to build a model. It chose to, because renting intelligence at its scale is just paying someone else to own your future.</p>
+<p>The design app grew teeth. Watch what it bites next.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
