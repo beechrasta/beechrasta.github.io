@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 8 Things Kimi K3.1 Pro's 3 Trillion Parameters Prove in 2026, and the Open Weights Are Still a Promise | Rachit Asthana's Articles</title>
+<meta name="description" content="Moonshot AI's Kimi K3.1 Pro packs 2.8 trillion parameters, trades punches with Claude Opus 5.5 on coding benchmarks, and costs a third less than its predecessor. The catch: the open weights are still a promise, and the lab deliberately dulled its hacking skills first.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-10-24">2026-10-24</time>
+<h1>The 8 Things Kimi K3.1 Pro's 3 Trillion Parameters Prove in 2026, and the Open Weights Are Still a Promise</h1>
+<p><em>A Beijing lab just dropped a 2.8-trillion-parameter monster that out-codes almost everything. The weights land November 4. Probably.</em></p>
+<p><img alt="Kimi chatbot example screenshot" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-24/kimi-chatbot-hero.jpg" />
+<em>Kimi in conversation. Moonshot AI's K3.1 Pro claims 2.8 trillion parameters, with only 104 billion firing per token. Screenshot: VulcanSphere, public domain, via Wikimedia Commons (software by Moonshot AI)</em></p>
+<p>Let's stop pretending the AI race is a two-horse sprint between San Francisco labs.</p>
+<p><strong>On October 23, 2026, Moonshot AI unveiled Kimi K3.1 Pro</strong>, the first model in the K3.1 series, and the numbers are the kind that make benchmark leaderboards look lopsided.</p>
+<p>This article is not a spec sheet. It is about what a 3-trillion-parameter open-weight promise does to the balance of power, and why the most interesting number in the launch is not a benchmark at all.</p>
+<h2>1. This is not a new model, it is a new training philosophy</h2>
+<ul>
+<li>K3.1 Pro is a <strong>post-trained version of Kimi K3</strong> (the July 2026 model whose weights shipped July 27), not a fresh base model</li>
+<li>Moonshot pushed it through <strong>much larger post-training compute</strong>: joint reinforcement learning across "hundreds of downstream domains," plus an optimized RL framework, long-context inference, and new sandbox infrastructure</li>
+<li>One open-models watcher, <strong>Nathan Lambert</strong> of the Interconnects newsletter, put it plainly on X: "it looks like they figured out their RL, where the initial release was a very impressive base model with lighter post-training"</li>
+</ul>
+<p>So what: <strong>the base model was the rough draft; the RL was the product.</strong> The frontier is moving from pretraining scale to post-training grind.</p>
+<p><em>(Sources: <a href="https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/">MarkTechPost</a>, <a href="https://www.webpronews.com/moonshot-kimi-k3-1-pro-open-weights-cyber-data/">WebProNews</a>)</em></p>
+<h2>2. Decoding the 3T: only 104 billion brains fire at once</h2>
+<ul>
+<li><strong>2.8 trillion total parameters</strong>, but just <strong>104 billion active per token</strong>, in a sparse mixture-of-experts design: <strong>896 experts</strong>, only 16 awake per token, routed by a "Stable LatentMoE" framework</li>
+<li>Custom <strong>Kimi Delta Attention</strong> (a Gated DeltaNet linear-attention implementation) plus "Attention Residuals" carried over from K3</li>
+<li><strong>1-million-token context window</strong>, multimodal across text and images, with video input referenced in the API docs</li>
+</ul>
+<p>So what: <strong>the headline number is marketing; the active number is engineering.</strong> 104B active per token is the part your GPU bill actually feels.</p>
+<p><em>(Sources: <a href="https://siliconangle.com/2026/10/23/moonshot-ai-launches-new-flagship-kim-k3-1-pro-model-with-3t-parameters/">SiliconANGLE</a>, <a href="https://www.linkedin.com/posts/kimi-ai-linkedin_introducing-kimi-k31-pro-our-most-capable-activity-7519448212529934336-UB0h">Kimi launch post</a>)</em></p>
+<h2>3. It is trading punches with Claude Opus 5.5</h2>
+<ul>
+<li>Moonshot's own numbers (company-reported, mostly unaudited): <strong>Terminal-Bench 4.0 at 65.7%</strong>, against Claude Opus 5.5's 66.4% and GPT-6 Astra's 58.2%; <strong>OfficeQA Pro v2 at 64.4</strong>, claimed as the top score anywhere; <strong>BenchCAD 92.7%</strong> with tools</li>
+<li>Claim-level hallucination rate fell from <strong>23.4% on K3 to 8.3%</strong> on K3.1 Pro, per Moonshot's internal measures</li>
+<li>The independent check matters more: <strong>Artificial Analysis</strong> scores it <strong>55 on its Intelligence Index, 4th overall</strong>, behind only Claude Opus 5.5 (58), Claude Sonnet 5.5 (56), and Muse Wonder Full (56). That is <strong>up 11 points</strong> from K3's 44</li>
+<li>Where it shines is agentic work: <strong>Terminal-Bench 4.0 at 67%</strong> (the highest of any model, independently measured), GDPval-AA at 1,846 Elo (3rd, up 312), AutomationBench at 73% (up from 58%)</li>
+</ul>
+<p>So what: <strong>a lab from Beijing is now within 3 points of the best proprietary model on earth.</strong> The gap between open and closed weights just shrank from 12 points to 3.</p>
+<p><em>(Sources: <a href="https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks">Artificial Analysis</a>, <a href="https://siliconangle.com/2026/10/23/moonshot-ai-launches-new-flagship-kim-k3-1-pro-model-with-3t-parameters/">SiliconANGLE</a>)</em></p>
+<p><img alt="Kimi interface screenshot" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-24/kimi-screenshot-body.jpg" />
+<em>The Kimi interface. K3.1 Pro is live on Kimi.ai, Kimi Work, Kimi Code, and the API. Screenshot: Rodrigo Padula, CC BY 4.0, via Wikimedia Commons</em></p>
+<h2>4. The pricing is a knife fight</h2>
+<ul>
+<li>API pricing: <strong>$2 per million input tokens, $10 per million output, $0.20 cached input</strong>, a full <strong>33% cheaper than K3</strong> across all three rates</li>
+<li>A <strong>K3.1 Pro Highspeed</strong> variant runs 2 to 3 times faster at <strong>$4/$20</strong> per million in/out, same cached price, with no separate benchmarks published for it</li>
+</ul>
+<p>So what: <strong>frontier-adjacent coding at a third off.</strong> If you are an indie dev or a startup in India watching every token, this is the price war working for you.</p>
+<p><em>(Sources: <a href="https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks">Artificial Analysis</a>, <a href="https://pasqualepillitteri.it/en/news/26667/kimi-k3-1-pro-launches-open-weights-nov-4">pasqualepillitteri.it</a>)</em></p>
+<h2>5. The open weights are a promise, not a fact</h2>
+<ul>
+<li>The weights are <strong>not published yet</strong>. Moonshot promises full weights by <strong>November 4, 2026</strong>, and the license has not even been specified</li>
+<li>Lambert's verdict, with the caveat doing heavy lifting: the scores "look to be clearly the strongest current open weight model, <strong>if the weights are released as they claim by November 4th</strong>"</li>
+</ul>
+<p><u>Never celebrate an open model before the weights land. Announcements are cheap; torrents are truth.</u></p>
+<p><em>(Sources: <a href="https://siliconangle.com/2026/10/23/moonshot-ai-launches-new-flagship-kim-k3-1-pro-model-with-3t-parameters/">SiliconANGLE</a>, <a href="https://www.webpronews.com/moonshot-kimi-k3-1-pro-open-weights-cyber-data/">WebProNews</a>)</em></p>
+<h2>6. They deliberately dulled its hacking skills</h2>
+<ul>
+<li>Ahead of the open-weight release, Moonshot <strong>stripped cybersecurity-related data</strong> from the post-training set, on purpose, for safety</li>
+<li>Their own honesty about the cost: on an in-house exploit benchmark, the filtered model solves <strong>81.0%</strong> of tasks versus <strong>90.5%</strong> for an unfiltered build. A 9.5-point self-inflicted wound</li>
+<li>Future models will get "more advanced vulnerability analysis features," which reads like: we will figure out the safety story later</li>
+</ul>
+<p>So what: <strong>this is the new normal for open weights.</strong> The model you download is the model minus its teeth, and the lab is telling you exactly how many teeth it pulled.</p>
+<p><em>(Sources: <a href="https://www.webpronews.com/moonshot-kimi-k3-1-pro-open-weights-cyber-data/">WebProNews</a>, <a href="https://siliconangle.com/2026/10/23/moonshot-ai-launches-new-flagship-kim-k3-1-pro-model-with-3t-parameters/">SiliconANGLE</a>)</em></p>
+<h2>7. The lab is named after a Pink Floyd album</h2>
+<ul>
+<li><strong>Moonshot AI</strong> is Beijing-based (Haidian district HQ), founded in <strong>March 2023</strong> by Tsinghua schoolmates <strong>Yang Zhilin</strong> (CEO, ex-Google Brain and Meta, co-author of Transformer-XL and XLNet), Zhou Xinyu, and Wu Yuxin</li>
+<li>The name comes from Pink Floyd's <strong>Dark Side of the Moon</strong></li>
+<li>The <strong>Kimi chatbot</strong> launched in October 2023 and made its name on absurd long context (2 million tokens) before the open-weight pivot with the K2, K2.5, and K3 series</li>
+</ul>
+<p>So what: <strong>the founder co-wrote two of the papers your transformer runs on.</strong> This is not a hype lab; it is a research lab that learned to ship.</p>
+<p><em>(Source: <a href="https://en.wikipedia.org/wiki/Moonshot_AI">Wikipedia</a>)</em></p>
+<p><img alt="Zhongguancun, Beijing tech hub" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-24/zhongguancun.jpg" />
+<em>Zhongguancun, Beijing's tech corridor. Moonshot AI builds from Haidian district, a short walk from Tsinghua, where its founders studied. Photo: N509FZ, CC BY-SA 4.0, via Wikimedia Commons</em></p>
+<h2>8. Why developers should care this weekend</h2>
+<ul>
+<li>If the weights land November 4, this becomes the <strong>highest-scoring open-weights model in existence</strong>, and the open-versus-proprietary gap collapses to 3 points</li>
+<li>Moonshot is positioning it for <strong>full-project coding</strong> (games in Unreal, Unity, and Godot), parametric 3D modeling in <strong>Blender and CAD</strong>, and finance work with hallucination "down 65%" (their claim, treat as marketing until verified)</li>
+<li>The agentic scores are the real story: Terminal-Bench and AutomationBench measure <strong>work</strong>, not trivia. This thing does jobs</li>
+</ul>
+<p>So what: <strong>your next coding agent's brain might be downloadable.</strong> Start planning your eval harness now, not after the torrent drops.</p>
+<p><em>(Sources: <a href="https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks">Artificial Analysis</a>, <a href="https://officechai.com/ai/moonshot-ai-releases-kimi-k3-1-pro-beats-opus-5-5-gpt-astra-6-on-some-benchmarks/">OfficeChai</a>)</em></p>
+<h2>How to start</h2>
+<ul>
+<li><strong>If you build with LLMs:</strong> try K3.1 Pro on the API this weekend at the $2/$10 rates. Benchmark it against whatever you use now on your own tasks, not theirs.</li>
+<li><strong>If you run open models:</strong> mark November 4 on your calendar, and watch for the license terms. A great model with a hostile license is a demo, not a tool.</li>
+<li><strong>If you just follow the race:</strong> stop counting parameters. Start counting active parameters per token, post-training compute, and agentic benchmarks. That is where the frontier moved.</li>
+</ul>
+<h2>The real pattern</h2>
+<p>The moat was never the parameter count. It was who could afford the post-training. Moonshot just proved a focused RL grind can take a July base model within 3 points of the best closed lab on earth, and once those weights drop, that grind becomes everyone's starting line.</p>
+<h2>Final thoughts</h2>
+<p>Three trillion parameters, and the bravest number in the launch is 9.5.</p>
+<p>That is how many points of hacking skill Moonshot cut out of its own model, on purpose, in public.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
