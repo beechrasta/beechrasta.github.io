@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 8 Things Mistral's Le Chonk Proves in 2026, and Why Open Weight Is Not the Same as Free | Rachit Asthana's Articles</title>
+<meta name="description" content="Mistral just dropped the weights for its trillion parameter Le Chonk, and the headline numbers hide the three things that will actually hit your bill, your hardware, and your license. Here is the developer's version, with the traps labelled.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-10-31">2026-10-31</time>
+<h1>The 8 Things Mistral's Le Chonk Proves in 2026, and Why Open Weight Is Not the Same as Free</h1>
+<p>Forget the leaderboard screenshot. The real story is the effort knob, the price card, and the license footnote.</p>
+<p><img alt="Mistral Large 4 architecture" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-31/mistral-large4-hero.png" />
+<em>Mistral Large 4, nicknamed Le Chonk, in Hugging Face's launch diagram. Credit: Hugging Face.</em></p>
+<p>Let's stop pretending "open weight" means "free, no strings, run it on your laptop tonight."</p>
+<p>On October 29, <strong>Mistral</strong> released the weights of <strong>Mistral Large 4</strong>, nicknamed <strong>Le Chonk</strong>, three weeks after its October 6 public preview. It is a roughly <strong>1 trillion parameter</strong> multimodal mixture of experts model, with about <strong>49 billion active parameters per token</strong>, and a <strong>1 million token context window</strong>.</p>
+<p>This article is not a benchmark victory lap. It is about what actually changes for a developer who wants to use this thing on Monday morning.</p>
+<h2>1. The preview was a trailer, not the model</h2>
+<ul>
+<li><strong>Mistral</strong> shipped <strong>Large 4</strong> as an API only preview on October 6, then kept training.</li>
+<li>Three more weeks of reinforcement learning and customer testing followed before the weights dropped.</li>
+<li>The checkpoint you can download today is not the checkpoint people reviewed in early October.</li>
+</ul>
+<p><strong>The lesson is simple: never pin a production decision to a preview model.</strong></p>
+<p><em>Source: <a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral announcement</a></em></p>
+<h2>2. Three weeks bought 13 points on Terminal-Bench</h2>
+<ul>
+<li><strong>Mistral</strong> says <strong>Terminal-Bench 4.0</strong> rose from 28.3 percent at preview to <strong>41 percent</strong> at release.</li>
+<li>Output tokens fell by about 30 percent over the same stretch, according to <strong>Mistral</strong>.</li>
+<li>On <strong>Cognition's</strong> private <strong>FrontierCode 2.0</strong>, <strong>Mistral</strong> claims <strong>19.7 percent</strong>, a lead among open weight models.</li>
+</ul>
+<p><u>That is the rare kind of improvement that is both faster and cheaper, not one or the other.</u></p>
+<p><em>Source: <a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral announcement</a></em></p>
+<h2>3. Do not paste two different leaderboards into one screenshot</h2>
+<ul>
+<li>On the <strong>Artificial Analysis Coding Agent Index</strong>, <strong>Mistral</strong> scores <strong>48 percent</strong>, effectively tied with <strong>GLM-5.3</strong>.</li>
+<li>The catch, and the useful part, is token efficiency: <strong>Mistral</strong> says it uses <strong>47 percent fewer tokens per task</strong> than <strong>GLM-5.3</strong> on average.</li>
+<li>On the broader <strong>Artificial Analysis Intelligence Index</strong>, <strong>Hugging Face</strong> puts <strong>Large 4</strong> at <strong>26</strong>, fifth among open weight models overall, but the top Western open weight model.</li>
+</ul>
+<p><strong>Different harnesses measure different things, so a single "best model" slide built from mixed rows is a lie by layout.</strong></p>
+<p><em>Source: <a href="https://huggingface.co/blog/mistral-large4">Hugging Face launch post</a></em></p>
+<p><img alt="Attention architecture" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-31/mistral-attention.png" />
+<em>How Large 4 mixes latent attention with sparse attention. Credit: Hugging Face.</em></p>
+<h2>4. The default reasoning setting is a silent bill</h2>
+<ul>
+<li><strong>Large 4</strong> now has three reasoning modes: <strong>low</strong> for simple tasks, <strong>medium</strong> for everyday work, and <strong>high</strong> for the hardest cases.</li>
+<li><strong>High is the default</strong>, and <strong>Hugging Face</strong> warns that sending <code>reasoning_effort: none</code> still maps to high.</li>
+<li>If your old preview code sends none expecting a cheap no thinking path, you are paying for high thinking instead.</li>
+</ul>
+<p><strong>Set the effort per route on purpose, or your token bill will set it for you.</strong></p>
+<p><em>Source: <a href="https://huggingface.co/blog/mistral-large4">Hugging Face launch post</a></em></p>
+<h2>5. The price card is honest, and it rewards caching</h2>
+<ul>
+<li><strong>Mistral's</strong> API list price from release day is <strong>0.70 dollars per million input tokens</strong>, <strong>0.07 dollars per million cached input tokens</strong>, and <strong>2.10 dollars per million output tokens</strong>.</li>
+<li>That makes long agent loops a caching problem before they are a model problem.</li>
+<li>A loop that reuses context cheaply looks completely different from one that re-sends everything fresh.</li>
+</ul>
+<p><strong>Price the effort knob and the rate card together, never one without the other.</strong></p>
+<p><em>Source: <a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral announcement</a></em></p>
+<h2>6. Open weight is not open source, and the license footnote matters</h2>
+<ul>
+<li>The weights use the <strong>Mistral Ecosystem Open-Weight License</strong>, a modified MIT license.</li>
+<li>You may use, modify, fine tune, and commercialize the model, with one hard condition.</li>
+<li>A business that operates a <strong>Model-as-a-Service</strong> offering needs a separate commercial license from <strong>Mistral</strong> before commercial use.</li>
+</ul>
+<p><u>Self hosting inside your own product is not the same as renting the weights out as a public model API, and the license draws that line sharply.</u></p>
+<p><em>Source: <a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral announcement</a></em></p>
+<h2>7. The cyber story is defensive, and deliberately gated at the edge</h2>
+<ul>
+<li><strong>Mistral</strong> reports <strong>51 percent</strong> on the <strong>Artificial Analysis Cyber Index</strong>, which tests finding, reproducing, and patching real vulnerabilities without breaking the code.</li>
+<li>It also claims a <strong>96.6 percent</strong> average refusal rate on malicious cyber prompts, the highest it measures among open models.</li>
+<li>The specialized variant for penetration testing and red teaming is not in the public checkpoint: it goes to vetted design partners, like <strong>Orange Cyberdefense</strong>, under contractual safeguards.</li>
+</ul>
+<p><strong>That split is the honest version of "safe and capable": the public model helps defenders, the attack optimized build stays behind a vetting wall.</strong></p>
+<p><em>Source: <a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral announcement</a></em></p>
+<p><img alt="Mixture of experts" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-31/mistral-experts.png" />
+<em>128 routed experts, four active per token, plus one shared expert. Credit: Hugging Face.</em></p>
+<h2>8. Almost nobody should self host this on day one</h2>
+<ul>
+<li>The official checkpoints are <strong>FP8</strong> and <strong>NVFP4</strong>, served with <strong>vLLM</strong> or <strong>SGLang</strong>, and the model card is <strong>mistralai/Mistral-Large-4-1T-A52B</strong>.</li>
+<li><strong>Hugging Face</strong> notes the <strong>NVFP4</strong> build needs <strong>NVIDIA Blackwell</strong> GPUs, and the main <strong>FP8</strong> recipe is an 8 GPU server setup.</li>
+<li>The lightest community path, 2 bit <strong>GGUF</strong> quants, is reported to run on a single <strong>Apple Silicon Ultra</strong> machine with 512 GB of unified memory, which is itself a serious machine.</li>
+</ul>
+<p><strong>Start on the API or a hosted endpoint, run a golden eval on your own tickets, and only bring up GPUs when the eval says the ownership is worth the ops.</strong></p>
+<p><em>Source: <a href="https://huggingface.co/blog/mistral-large4">Hugging Face launch post</a></em></p>
+<h2>How to start</h2>
+<ul>
+<li><strong>If you are a builder:</strong> try it on <strong>Mistral Studio</strong>, <strong>OpenRouter</strong>, or <strong>Microsoft Foundry</strong> first, and set reasoning effort explicitly per route.</li>
+<li><strong>If you are a security team:</strong> test reproduce then patch on your own repos in a sandbox, and measure refusal behaviour yourself instead of quoting a vendor chart.</li>
+<li><strong>If you are a founder:</strong> read the license before anything you ship looks like a model API, and price a realistic agent loop, not a single prompt.</li>
+</ul>
+<p>You do not need all three paths. Pick one, measure it, then decide.</p>
+<h2>The real pattern</h2>
+<p>The open frontier is no longer winning by publishing the biggest weights. It is winning by publishing weights with a usable price, a controllable cost knob, and a license you can actually read without a lawyer on speed dial, while keeping the sharpest cyber variant behind a gate. That combination, not the parameter count, is what makes Le Chonk dangerous to closed models.</p>
+<h2>Final thoughts</h2>
+<p>A trillion parameters is a headline. A model you can inspect, fine tune, serve yourself, and afford to run at agent scale is a tool.</p>
+<p>Download it if you need control. Rent it if you need speed. Just do not confuse the download button with freedom from every cost, because the bill, the hardware, and the license are still waiting in the next three tabs.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
