@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 7 Things Google's First Space Computer Proves in 2026, and Why Your Next Data Center Might Orbit Earth | Rachit Asthana's Articles</title>
+<meta name="description" content="Google's first orbital computer just answered from space with a haiku, but the poem is the least interesting part. The power budget, the radiation risk, and the 1,800 rocket flights behind it are the real story.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-10-31">2026-10-31</time>
+<h1>The 7 Things Google's First Space Computer Proves in 2026, and Why Your Next Data Center Might Orbit Earth</h1>
+<p>A haiku is a strange way to announce a data center. It is also the most honest demo Google could have picked.</p>
+<p><img alt="Project Suncatcher satellite" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-31/suncatcher-hero.png" />
+<em>Google's Project Suncatcher prototype, carrying TPUs into orbit. Credit: Notebookcheck.</em></p>
+<p>Let's stop pretending the AI energy problem will be solved by building a bigger warehouse next to a power plant.</p>
+<p>On October 30, <strong>Google</strong> said its <strong>Project Suncatcher</strong> prototype satellite returned its first AI response from orbit: a haiku, written by its onboard <strong>Gemma 4</strong> model, running on a data center class <strong>TPU</strong>.</p>
+<p>This article is not about a poem. It is about what it costs, in power, heat, radiation, and rockets, to move computing off the planet at all.</p>
+<h2>1. The Hello World moment was a haiku, on purpose</h2>
+<ul>
+<li>Engineers uplinked the first prompt during a ground station pass and asked <strong>Gemma 4</strong> to write a haiku about being in space.</li>
+<li>As the satellite passed <strong>Svalbard, Norway</strong>, it downlinked the result: "Blue marble below / Data streams in silent grace / Starlight feeds my core."</li>
+<li><strong>Google</strong> calls this the mission's Hello World milestone, and the first ever AI response from a data center class <strong>TPU</strong> in orbit.</li>
+</ul>
+<p><strong>A poem proves the whole loop in one shot: receive, compute, and send back, with nothing on Earth doing the thinking for it.</strong></p>
+<p><em>Source: <a href="https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/">TechCrunch</a></em></p>
+<h2>2. Four chips, one kilowatt, twenty minutes at a time</h2>
+<ul>
+<li>The prototype carries <strong>four Google TPUs</strong> but generates only up to <strong>1 kilowatt</strong> of electricity, about what a microwave draws.</li>
+<li>That means engineers can run only <strong>one TPU at a time, for about 20 minutes</strong>, before power and heat become the constraint.</li>
+<li><strong>Google</strong> also asked the satellite for space themed limericks and for telemetry about its own orbital conditions, not just poetry.</li>
+</ul>
+<p><u>Your laptop has more comfortable working conditions than this satellite, and that is exactly the point of the test.</u></p>
+<p><em>Source: <a href="https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/">TechCrunch</a></em></p>
+<h2>3. This satellite was a shortcut, and Google admits it by flying it</h2>
+<ul>
+<li>The prototype launched on <strong>October 1</strong> aboard a <strong>SpaceX Falcon 9 Transporter-18</strong> rideshare, alongside more than 100 other spacecraft.</li>
+<li>It was built in partnership with <strong>Planet</strong>, using a satellite <strong>Planet</strong> had already built, which let <strong>Google</strong> fly months before its planned custom satellites.</li>
+<li>After about three weeks of commissioning, checking every subsystem, the team started running real machine learning workloads.</li>
+</ul>
+<p><strong>Moonshots usually wait for the perfect vehicle. This one flew on a rideshare and a borrowed bus to learn faster.</strong></p>
+<p><em>Source: <a href="https://www.notebookcheck.net/Google-s-first-orbital-AI-data-center-is-up-and-running-and-it-wrote-a-strange-little-poem.1438409.0.html">Notebookcheck</a></em></p>
+<p><img alt="Satellite over Earth" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-31/satellite-earth.jpg" />
+<em>A satellite in orbit over Earth, the environment Suncatcher's TPUs must survive. Credit: WorldAtlas.</em></p>
+<h2>4. The pitch is sunlight, and the numbers are genuinely big</h2>
+<ul>
+<li><strong>Google</strong> says a solar panel in orbit can generate up to <strong>eight times</strong> as much power as the same panel on the ground, with near constant sunlight in the right orbit.</li>
+<li>Data centers are projected to use around <strong>3 percent of the world's electricity by 2030</strong>, about double today's share, according to the <strong>International Energy Agency</strong> figures cited in coverage of the project.</li>
+<li>The long term goal is constellations of satellites sharing AI workloads over laser links, then sending only results back to Earth.</li>
+</ul>
+<p><strong>Space does not solve the energy problem today, but it reframes it: the sun is the biggest power supply we have, and we keep building data centers in its shadow.</strong></p>
+<p><em>Source: <a href="https://theoutpost.ai/news-story/google-launches-project-suncatcher-to-test-ai-data-centers-in-space-with-spacex-31610/">The Outpost</a></em></p>
+<h2>5. Radiation is the quiet enemy, and it corrupts silently</h2>
+<ul>
+<li><strong>Google</strong> tested its <strong>TPUs</strong> in particle accelerators on Earth, blasting chips with proton beams to simulate space radiation.</li>
+<li>The next tests in orbit will check thermal stress and real radiation exposure, because radiation can cause bit flips: a stored value changes, and data corrupts without tripping normal monitoring.</li>
+<li>Ground testing suggested radiation would matter less for inference than for training, but <strong>Google</strong> now gets to check that guess against reality, not a simulation.</li>
+</ul>
+<p><strong>A data center that silently flips bits is worse than one that crashes loudly, which is why this boring test campaign matters more than the poem.</strong></p>
+<p><em>Source: <a href="https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/">TechCrunch</a></em></p>
+<h2>6. The economics are brutal, and Google published them anyway</h2>
+<ul>
+<li>In a peer reviewed paper in the journal <strong>Joule</strong>, <strong>Suncatcher</strong> researchers estimated launch costs must fall to about <strong>200 dollars per kilogram</strong> before space data centers compete with Earth facilities.</li>
+<li>Reaching that price, on their math, needs <strong>SpaceX's Starship</strong> to fly about <strong>1,800 times</strong>, carrying roughly <strong>370,000 tons</strong> over ten years, or about 180 launches a year.</li>
+<li>Each <strong>Starship</strong> mission in that model carries 200 metric tons, with components reused 100 times.</li>
+</ul>
+<p><u>That is not a business plan for 2027. It is a price target for the 2030s, published in public, by the company that would benefit most from hiding it.</u></p>
+<p><em>Source: <a href="https://theoutpost.ai/news-story/google-launches-project-suncatcher-to-test-ai-data-centers-in-space-with-spacex-31610/">The Outpost</a></em></p>
+<h2>7. The 2027 test is where this stops being a stunt</h2>
+<ul>
+<li>If the current <strong>TPUs</strong> hold up, <strong>Google</strong> plans to launch <strong>two interconnected satellites in 2027</strong>, with higher power generation and inter satellite optical links.</li>
+<li><strong>Suncatcher</strong> is unusual in planning close flying satellites that share one coherent workload at high speed, rather than running separate jobs on separate satellites.</li>
+<li>Rivals like <strong>Starcloud</strong> and <strong>Cowboy Space</strong> plan inference on individual satellites, while <strong>SpaceX's</strong> own space data centers are expected to use laser links but orbit too far apart to share processing effectively.</li>
+</ul>
+<p><strong>One satellite writing a haiku is a demo. Two satellites splitting one job over a laser link is a computer, and that is the test to watch.</strong></p>
+<p><em>Source: <a href="https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/">TechCrunch</a></em></p>
+<p><img alt="Satellite in space" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-10-31/satellite-space.jpg" />
+<em>Solar powered computing in orbit still has to solve cooling, radiation, and repair. Credit: The Chemical Engineer.</em></p>
+<h2>How to start</h2>
+<ul>
+<li><strong>If you are a student:</strong> learn the three constraints that decide this whole field, power, thermal management, and optical links, before you learn the hype.</li>
+<li><strong>If you are a developer:</strong> treat orbit as extreme edge computing, where every watt, every bit flip, and every 20 minute window is a design constraint you can already practice for on Earth.</li>
+<li><strong>If you are just curious:</strong> follow the 2027 twin satellite test, not the poetry, because shared workloads over laser links are the result that would actually change where AI runs.</li>
+</ul>
+<p>You do not need to care about space to care about this. You only need to care about where your next model will get its power.</p>
+<h2>The real pattern</h2>
+<p>Every AI company is hitting the same wall: land, power, water, and permission to build another giant data center. Google's answer is to ask whether the wall disappears if you leave the ground entirely, and then to publish the rocket math that says not yet, not cheaply, not without a reusable rocket flying almost weekly. That honesty, a moonshot with its own price tag attached, is rarer than the haiku.</p>
+<h2>Final thoughts</h2>
+<p>A poem from orbit is cute. A chip surviving radiation, heat, and a 20 minute power budget is useful.</p>
+<p><strong>Google</strong> has not built a space data center. It has built the first honest test of whether one is even possible, and the answer so far is a three line poem and a very long to do list.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
