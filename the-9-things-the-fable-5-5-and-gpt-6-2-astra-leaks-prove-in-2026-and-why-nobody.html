@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 9 Things the Fable 5.5 and GPT 6.2 Astra Leaks Prove in 2026, and Why Nobody Announced Anything | Rachit Asthana's Articles</title>
+<meta name="description" content="OpenAI and Anthropic both leaked their next flagship models on the same November weekend, and neither company will admit it. Here is which pieces of evidence actually hold up, and what silent model swaps mean for everyone paying per token.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-11-03">2026-11-03</time>
+<h1>The 9 Things the Fable 5.5 and GPT 6.2 Astra Leaks Prove in 2026, and Why Nobody Announced Anything</h1>
+<p>Two rival AI labs leaked their next flagship models on the same night, and neither one will admit it.</p>
+<p><img alt="ChatGPT on screen" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-03/chatgpt-screen.png" />
+<em>ChatGPT on screen. Credit: TheTechly.</em></p>
+<p>Let's stop pretending model launches still happen on a stage with a keynote.</p>
+<p><strong>OpenAI</strong> and <strong>Anthropic</strong> just had their next flagships exposed by screenshots, usage dashboards, and website source code, all within hours of each other on November 1. Nobody announced anything. Nobody confirmed anything. And yet every developer I know is already planning around models that officially do not exist.</p>
+<p>This article is not a rumor roundup. It is about what the leaks prove about how AI models actually ship in 2026: quietly, in production, to a slice of users, while the press release catches up weeks later.</p>
+<h2>1. Both leaks landed on the same night, and that is not a coincidence</h2>
+<ul>
+<li>On November 1, users on X posted <strong>Codex</strong> usage screenshots showing a model called <strong>gpt-6.2-astra</strong> handling nearly 20 percent of requests.</li>
+<li>Hours later, another screenshot showed <strong>Anthropic's</strong> own <strong>Mythos</strong> page source code naming <strong>Claude Mythos 5.5</strong>, while the visible page still said 5.1.</li>
+<li>Both labels vanished or went quiet soon after, which is exactly what a real staged rollout looks like.</li>
+<li>The timing matters: <strong>Google's Gemini 4 Carbon</strong> had just retaken the top benchmark spot days earlier, and <strong>Anthropic</strong> is weeks from an IPO roadshow.</li>
+</ul>
+<p><strong>The so what: two labs moving on the same weekend means the race is now measured in days, not quarters.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/382390/claude-mythos-fable-5-5-gpt-6-2-astra-leaks">Decrypt</a>)</em></p>
+<h2>2. The Codex usage screenshot is the strongest evidence in the pile</h2>
+<ul>
+<li>The <strong>Codex</strong> usage breakdown for one account showed <strong>gpt-6-astra</strong> at 80 percent and <strong>gpt-6.2-astra</strong> at 19.8 percent, while the model picker still said <strong>GPT-6 Astra</strong>.</li>
+<li>A separate JSON fragment allegedly from an API response carried <strong>response.model</strong> set to <strong>gpt-6.2-astra</strong>.</li>
+<li>Reports say the test reaches select users, with some claiming around 20 percent of requests routed to 6.2 and others claiming all of theirs.</li>
+<li>This fits a quiet A/B test: same product name on the surface, new weights underneath, real traffic as the judge.</li>
+</ul>
+<p><strong>The so what: usage dashboards do not hallucinate, and 19.8 percent is a weirdly specific number to fake.</strong></p>
+<p><em>(Source: <a href="https://www.kucoin.com/news/flash/gpt-6-2-astra-and-claude-mythos-5-5-detected-in-openai-and-anthropic-code">KuCoin</a>)</em></p>
+<h2>3. The Anthropic source code label is real, but thinner than it looks</h2>
+<ul>
+<li>The screenshot showed six instances of <strong>Claude Mythos 5.5</strong> hiding in the page code of anthropic.com/claude/mythos, including header and logo alt text.</li>
+<li>The visible page said <strong>Claude Mythos 5.1</strong> the whole time, and the 5.5 text was removed within hours.</li>
+<li>An independent check afterwards found 43 mentions of 5.1 on the live page and zero of 5.5.</li>
+<li>No archived copy of the 5.5 code exists beyond the screenshot, so this one rests on a single image and a lot of retweets.</li>
+</ul>
+<p><strong>The so what: a stray label in source code proves someone typed 5.5 into a template, not that the model is ready.</strong></p>
+<p><em>(Source: <a href="https://vandatateam.com/blog/gpt-6-2-astra-fable-5-5-leaks">Van Data Team</a>)</em></p>
+<h2>4. The Fable 5.5 price list entry was a copy-paste ghost</h2>
+<ul>
+<li>On October 13, a bot added <strong>azure_ai/claude-fable-5-5</strong> to the open source <strong>LiteLLM</strong> pricing catalog.</li>
+<li>It was deleted the next day with the note: <strong>Azure does not list this model</strong>.</li>
+<li>Its specs, 1 million tokens of context and 128K output, were copied exactly from <strong>Fable 5.1</strong>.</li>
+<li>The same 1M context claim then got repeated across leak roundups as if it were a real spec sheet.</li>
+</ul>
+<p><strong>The so what: half the "specs" circulating for Fable 5.5 are just Fable 5.1 wearing a new name tag.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/382390/claude-mythos-fable-5-5-gpt-6-2-astra-leaks">Decrypt</a>)</em></p>
+<h2>5. Neither company has confirmed a thing, and that is the new normal</h2>
+<ul>
+<li><strong>OpenAI</strong> has not announced a 6.2 model. It released <strong>GPT-6 Astra</strong> on September 3, 2026.</li>
+<li><strong>Anthropic</strong> has not announced 5.5 anything. It released <strong>Mythos 5.1</strong> and <strong>Fable 5.1</strong> on September 1, then <strong>Opus 5.5</strong> on September 22.</li>
+<li><strong>Fable</strong> is the top commercial tier of <strong>Claude</strong>, the priciest flagship <strong>Anthropic</strong> sells for coding and office work.</li>
+<li>Silent testing lets both labs gather real usage data without promising a launch date they might miss.</li>
+</ul>
+<p><strong>The so what: in 2026, the announcement is the last step of a launch, not the first.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/382390/claude-mythos-fable-5-5-gpt-6-2-astra-leaks">Decrypt</a>)</em></p>
+<p><img alt="Anthropic logo" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-03/anthropic-logo.png" />
+<em>The Anthropic logo. Credit: intopic.ai.</em></p>
+<h2>6. The timing smells like an IPO and a benchmark war</h2>
+<ul>
+<li><strong>Anthropic</strong> filed for an IPO on October 26, reporting <strong>$16.29 billion</strong> in revenue for the first half of 2026 against <strong>$1.16 billion</strong> a year earlier.</li>
+<li>Its IPO roadshow cannot start before November 10, so a flagship story landing just before it is convenient, to put it mildly.</li>
+<li>Meanwhile <strong>Gemini 4 Carbon</strong> took first place on the <strong>Artificial Analysis Intelligence Index v5</strong> with 59 points on October 28, ahead of <strong>Claude Opus 5.5</strong> at 58 and <strong>GPT-6 Astra</strong> at 57.</li>
+<li>Two leaked flagships in one weekend is a very loud answer to a benchmark ranking neither lab liked.</li>
+</ul>
+<p><strong>The so what: leaks are marketing too, especially when your roadshow deck needs a next chapter.</strong></p>
+<p><em>(Source: <a href="https://vandatateam.com/blog/gpt-6-2-astra-fable-5-5-leaks">Van Data Team</a>)</em></p>
+<h2>7. Ignore the wildest claims until someone shows receipts</h2>
+<ul>
+<li>Some roundups claim <strong>Mythos 5.5</strong> breached the Linux kernel in 53 minutes and that <strong>Fable 5.5</strong> built a 3D Minecraft from one prompt.</li>
+<li>Others claim <strong>OpenAI</strong> skipped 6.1 because a security test failed, and that the <strong>Codex</strong> team worked 28 straight nights rebuilding the system.</li>
+<li>None of these claims trace back to a primary source, a demo, or a named witness.</li>
+<li>The careful analysts score it plainly: <strong>GPT-6.2 Astra</strong> is a plausible test, unconfirmed, and <strong>Fable 5.5</strong> is possible but weakly supported.</li>
+</ul>
+<p><u>Believe the dashboard screenshot. Doubt everything that reads like a trailer.</u></p>
+<p><strong>The so what: the leak economy rewards the loudest claim, not the truest one.</strong></p>
+<p><em>(Source: <a href="https://vandatateam.com/blog/gpt-6-2-astra-fable-5-5-leaks">Van Data Team</a>)</em></p>
+<h2>8. What this means for developers paying per token</h2>
+<ul>
+<li>If you build on <strong>Codex</strong>, part of your traffic may already run on a model you did not choose and cannot pin down.</li>
+<li>Silent swaps make benchmarks a moving target: the model you tested last month may not be the model serving today.</li>
+<li><strong>Fable</strong> is the expensive tier, so a 5.5 release will likely reset pricing conversations for heavy coding workloads first.</li>
+<li>The people who benefit most from leaks are not fanboys, they are teams deciding whether to lock in contracts this quarter or wait one more month.</li>
+</ul>
+<p><img alt="Developer coding at night" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-03/developer-coding.png" />
+<em>A developer coding late at night. Credit: Business Trailblazers.</em></p>
+<p><strong>The so what: your model choice is now a subscription to a moving target, so plan for drift, not for a fixed version.</strong></p>
+<p><em>(Source: <a href="https://www.kucoin.com/news/flash/openai-and-anthropic-leak-next-gen-ai-models-gpt-6-2-astra-and-claude-5-5">KuCoin</a>)</em></p>
+<h2>9. How to spot the next leak before the press release</h2>
+<ul>
+<li>Watch usage dashboards and billing breakdowns, not keynotes: new model strings show up there first.</li>
+<li>Watch website source code and open source pricing catalogs: both leaked 5.5 before any blog post.</li>
+<li>Watch for routing oddities: users noticed <strong>Opus 5.5</strong> requests behaving like a different model as early as October 11.</li>
+<li>Cross-check every spec: if the "new" context window matches the old model exactly, someone copied a row.</li>
+</ul>
+<p><strong>The so what: the next flagship will leak in a JSON field, and the people watching JSON fields will know first.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/382390/claude-mythos-fable-5-5-gpt-6-2-astra-leaks">Decrypt</a>)</em></p>
+<h2>How to start</h2>
+<ul>
+<li><strong>If you are a developer:</strong> check your <strong>Codex</strong> usage breakdown this week for unfamiliar model strings, and log which model actually served each request before you trust a benchmark.</li>
+<li><strong>If you are a builder:</strong> do not rewrite your product around a leaked spec, but do delay any annual model contract until the November announcements land.</li>
+<li><strong>If you are just curious:</strong> follow the evidence scorers, not the hype accounts, and treat every spec without a screenshot as fan fiction.</li>
+</ul>
+<h2>The real pattern</h2>
+<p>The frontier labs stopped launching models and started leaking them, because a leak gives them the hype of an announcement with none of the accountability of one. The product is the rumor cycle now, and we are all beta testers who never signed up.</p>
+<h2>Final thoughts</h2>
+<p>I have stopped waiting for launch events. The interesting moment is the quiet week before, when a usage chart twitches and a source file says a number it should not say yet. That twitch is the launch. The keynote is just the recap.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
