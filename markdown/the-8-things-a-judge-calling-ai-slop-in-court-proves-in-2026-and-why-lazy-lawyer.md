@@ -2,7 +2,7 @@
 
 A federal judge looked at three lawyers' AI-written court filings and gave the whole profession a phrase it will never live down.
 
-![![A wooden judge's gavel on its sounding block](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/gavel-hero.jpg)]
+![A wooden judge's gavel on its sounding block](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/gavel-hero.jpg)
 
 **A wooden judge's gavel on its sounding block. Judge Mark Pittman called the AI-written filings in front of him "blatant AI slop". Photo by Sasun Bughdaryan on Unsplash.**
 
@@ -77,7 +77,7 @@ Think about that. Two opposing teams, both using AI, both filing fake law, argui
 
 *(Source: [Mississippi Free Press](https://www.mississippifreepress.org/ai-hallucinations-prompt-mississippi-judge-to-boot-all-lawyers-from-case-for-blindly-relying-on-technology/))*
 
-![![Tall wooden bookshelves filled with old books](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/law-library.jpg)]
+![Tall wooden bookshelves filled with old books](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/law-library.jpg)
 
 **The Long Room at Trinity College Dublin. Real law lives in books like these, not in citations a chatbot invented. Photo by Alex Block on Unsplash.**
 
@@ -120,7 +120,7 @@ This is the lesson that extends far beyond law. Doctors, engineers, students, jo
 
 *(Source: [Reason, Volokh Conspiracy](https://reason.com/wp-json/wp/v2/volokh-post/8368730))*
 
-![![An empty ornate courtroom](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/courtroom.jpg)]
+![An empty ornate courtroom](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/courtroom.jpg)
 
 **An empty courtroom at the Old Bailey in London. Four courts in a year have now had to punish lawyers for filing AI-generated work. Photo by Michael D Beckwith on Unsplash.**
 
