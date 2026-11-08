@@ -2,7 +2,7 @@
 
 The computer that taught a generation to code now costs more than a budget laptop, and the reason is sitting in a data center a thousand miles away.
 
-![![A Raspberry Pi circuit board on a dark surface](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/raspberry-pi-hero.jpg)]
+![A Raspberry Pi circuit board on a dark surface](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/raspberry-pi-hero.jpg)
 
 **A Raspberry Pi board up close. The 16GB model now costs $385, more than three times its $120 launch price. Photo by Jainath Ponnala on Unsplash.**
 
@@ -75,7 +75,7 @@ This is the number that breaks people's brains. The RAM upgrade costs more than 
 
 *(Source: [HWBusters](https://hwbusters.com/news/raspberry-pi-5-16gb-price-jumps-to-385-and-the-extra-8gb-now-costs-more-than-a-whole-8gb-board/))*
 
-![![A computer processor held by tweezers](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/memory-chip.jpg)]
+![A computer processor held by tweezers](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/memory-chip.jpg)
 
 **A processor held by tweezers, showing its gold pins. Memory chips like these are the reason the Pi keeps getting more expensive. Photo by Brian Kostiuk on Unsplash.**
 
@@ -131,7 +131,7 @@ Nobody is saying never buy a **Pi**. I am saying do not pay scalper prices for a
 
 *(Source: [Talk with Tech](https://talkwithtech.com/raspberry-pi-5-16gb-price/))*
 
-![![Hands wiring electronics at a workbench](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/workbench.jpg)]
+![Hands wiring electronics at a workbench](https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-08/workbench.jpg)
 
 **Hands wiring electronics at a workbench. Makers are the people the Pi was built for, and they are the ones paying the new price. Photo by Eric Stoynov on Unsplash.**
 
