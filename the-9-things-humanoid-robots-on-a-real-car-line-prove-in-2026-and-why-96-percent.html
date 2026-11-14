@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 9 Things Humanoid Robots on a Real Car Line Prove in 2026, and Why 96 Percent Is Not the Point | Rachit Asthana's Articles</title>
+<meta name="description" content="Google's humanoid robots sorted car parts on a live Mercedes line at 96 percent, but nobody will tell you how many picks that was. Here is what actually happened, why the hand matters more than the brain, and who this hits first.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-11-14">2026-11-14</time>
+<h1>The 9 Things Humanoid Robots on a Real Car Line Prove in 2026, and Why 96 Percent Is Not the Point</h1>
+<p><em>Google's robots sorted car parts on a live Mercedes line at 96 percent. The number is real. The denominator is missing.</em></p>
+<p><img alt="Humanoid robots on a factory floor, with the humans still watching" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-14/humanoid-robots-factory.jpg" /></p>
+<p><em>Humanoid robots on a factory floor, with the humans still watching. Photo: Mongoose HQ</em></p>
+<p>Let's stop pretending humanoid robots are a demo video. This week one worked a real shift, on a real car line, while the line kept running.</p>
+<p><strong>Google DeepMind</strong> says <strong>Apptronik's Apollo 2</strong> sorted car parts at <strong>Mercedes-Benz</strong> plants with a 96 percent success rate. The number sounds like a verdict. It is not. It is a progress report with the fine print missing.</p>
+<p>This article is not a victory lap for robots. It is about what actually happened on that line, what the number hides, and who this hits first.</p>
+<h2>1. A robot did kitting on a live line, and the line did not stop</h2>
+<ul>
+<li>On active production lines in Kecskemét, Hungary, and Sindelfingen, Germany, <strong>Apollo 2</strong> humanoids autonomously performed automotive kitting.</li>
+<li>The job: reach into supply bins, pick up individual metal brackets, and place them into sequencing containers in the exact order each vehicle on the line needs.</li>
+<li>This was a real-world proof-of-concept, announced November 10 with <strong>Gemini Robotics 2.5</strong>, <strong>DeepMind's</strong> most capable vision-language-action model to date. Not a lab, not a staged video, a working factory.</li>
+</ul>
+<p><strong>That is the news. Everything else in this article is about how much it does and does not mean.</strong></p>
+<p><em>(Source: <a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/">Google DeepMind, Gemini Robotics 2.5</a>)</em></p>
+<h2>2. Kitting is the most boring job in the factory, which is exactly the point</h2>
+<ul>
+<li>Kitting is repetitive, physically taxing prep work: sorting parts into trays so the assembly line never waits.</li>
+<li><strong>DeepMind</strong> is explicit about why it picked this task. Offloading the monotonous work keeps the line moving and frees technicians to focus on complex build tasks.</li>
+<li>Robots are not starting with the skilled work. They are starting with the work humans are tired of doing, which is also the work nobody defends at a union meeting.</li>
+</ul>
+<p><strong>Watch which jobs go first. It is never the interesting ones.</strong></p>
+<p><em>(Source: <a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/">Google DeepMind, Gemini Robotics 2.5</a>)</em></p>
+<h2>3. 96 percent is a real number with a missing denominator</h2>
+<ul>
+<li><strong>DeepMind</strong> reports a 96 percent success rate, but the announcement does not say how many picks that covers, what counts as a success, or how often a human stepped in.</li>
+<li>24 successes in 25 attempts and 960 in 1,000 both round to 96 percent, and they mean very different things on a production line.</li>
+<li>No <strong>Mercedes</strong> statement confirms the figure independently, and the pilot is a proof-of-concept, not a deployment. There is no confirmed timetable or quantity for a factory-wide rollout.</li>
+</ul>
+<p><strong>A percentage without a denominator is a vibe, not a measurement. Treat it like one.</strong></p>
+<p><em>(Source: <a href="https://www.techtimes.com/articles/330432/20261111/gemini-robotics-25-reports-96-success-sorting-mercedes-car-parts-publishes-no-trial-count.htm">TechTimes</a>)</em></p>
+<h2>4. The hand is the story, not the brain</h2>
+<ul>
+<li><strong>Apollo 2</strong> carries the <strong>SharpaWave</strong> hand: five fingers, 22 degrees of freedom, built to handle delicate, flexible objects with finesse.</li>
+<li><strong>Gemini Robotics 2.5</strong> was evaluated across more than 200 distinct tasks, including serving food with tongs, tying a bow on a gift box, and pipetting a liquid. Those are dexterity tests, not compute tests.</li>
+<li>Compared with previous baselines, <strong>DeepMind</strong> reports 30 to 100 percent higher success depending on the task type, and tasks completed 20 to 30 percent faster.</li>
+</ul>
+<p><strong>Everyone talks about robot brains. The bottleneck was always fingers.</strong></p>
+<p><em>(Source: <a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/">Google DeepMind, Gemini Robotics 2.5</a>)</em></p>
+<p><img alt="Orange robot arms working on car bodies on an assembly line" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-14/kuka-car-factory.jpg" /></p>
+<p><em>Orange robot arms working on car bodies on an assembly line. Photo: ITC</em></p>
+<h2>5. Two models run the robot, one thinks and one moves</h2>
+<ul>
+<li><strong>Gemini Robotics ER</strong>, the embodied reasoning model, keeps track of the workflow: which car is next, which parts it needs, what goes where.</li>
+<li><strong>Gemini Robotics 2.5</strong>, the actions model, controls the hands and arms, reaching into bins and correcting for gaps while placing brackets.</li>
+<li>The split matters. Reasoning about a multi-step job and moving a hand through a cluttered bin are different problems, and <strong>DeepMind</strong> solved them with different models working together.</li>
+</ul>
+<p><strong>The robot does not have one brain. It has a planner and a pair of hands that take orders from it, which is suspiciously like how a factory already works.</strong></p>
+<p><em>(Source: <a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/">Google DeepMind, Gemini Robotics 2.5</a>)</em></p>
+<h2>6. Sindelfingen tried this in 2016 and gave up</h2>
+<ul>
+<li>The Sindelfingen plant is a pointed place to claim a humanoid milestone. In 2016, <strong>Mercedes</strong> said robots could not cope with the individualization and number of variants in its vehicles, and moved some work back to human workers.</li>
+<li>The plant produces about 400,000 cars a year. Variant complexity is the whole game there.</li>
+<li>Ten years later, the same plant is the test site, and the robot that is supposed to handle the variants is shaped like the humans who replaced the last robots.</li>
+</ul>
+<p><strong>History does not repeat, but it does run the same experiment twice and wait to see if the hardware caught up.</strong></p>
+<p><em>(Source: <a href="https://www.techtimes.com/articles/330432/20261111/gemini-robotics-25-reports-96-success-sorting-mercedes-car-parts-publishes-no-trial-count.htm">TechTimes</a>)</em></p>
+<h2>7. The safety numbers are the ones I actually believe</h2>
+<ul>
+<li><strong>Gemini Robotics 2.5</strong> uses inference-time reasoning guidance to steer around physical hazards in real time, like a safety classifier for movement instead of words.</li>
+<li>In <strong>DeepMind's</strong> evaluations, that lifted safe task completion around obstacles by 33 percent and around nearby people by 43 percent.</li>
+<li>The lab also released <strong>ASIMOV-Jailbreak</strong>, an open benchmark of adversarial prompts that try to trick robots into unsafe actions. <strong>Gemini 4 Argon</strong> scores 99.5 percent jailbreak resistance on it, against 82 percent for the previous baseline.</li>
+</ul>
+<p><strong>A robot that can be jailbroken into dropping a car part on someone is a liability, not a product. The safety work is the product.</strong></p>
+<p><em>(Source: <a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/">Google DeepMind, Gemini Robotics 2.5</a>)</em></p>
+<h2>8. You cannot buy this, and that is deliberate</h2>
+<ul>
+<li><strong>Gemini Robotics 2.5</strong> is rolling out to <strong>DeepMind's</strong> robotics partners only. There is no public API, no price, and no general availability date.</li>
+<li>More than 100 trusted testers, from industrial automation firms to robotics startups, are working with the models.</li>
+<li>The training itself was accelerated by <strong>Gemini 4 Argon</strong>, which acts as a simulation engine, generating thousands of varied practice runs from a real camera scene and building digital twins. <strong>Apptronik's</strong> CEO <strong>Jeff Cardenas</strong> said the models improved dramatically within a few weeks of post-training and carried over to the <strong>Mercedes</strong> lines with very little drop-off.</li>
+</ul>
+<p><strong>The robot is not a product yet. It is a partner program with a press release attached.</strong></p>
+<p><em>(Source: <a href="https://www.humanoidsdaily.com/news/gemini-robotics-2-5-apollo-2-mercedes-benz-argon">Humanoids Daily</a>)</em></p>
+<p><img alt="A humanoid service robot, the same wave in a different uniform" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-14/pepper-humanoid-robot.jpg" /></p>
+<p><em>A humanoid service robot, the same wave in a different uniform. Photo: Unsplash</em></p>
+<h2>9. Mercedes is not a neutral test site</h2>
+<ul>
+<li><strong>Mercedes</strong> signed a commercial agreement with <strong>Apptronik</strong> in March 2024, announced an investment in March 2025, and joined <strong>Google</strong> and <strong>B Capital</strong> as a repeat investor in <strong>Apptronik's</strong> 520 million dollar Series A-X extension in February 2026.</li>
+<li>The customer, the investor, and the test site are the same company. That does not make the 96 percent false, but it does make it interested.</li>
+<li>When the company grading the exam also funded the student and owns the classroom, read the score with both eyes open.</li>
+</ul>
+<p><strong>None of this makes the pilot fake. It makes it a pilot, run by believers, on a friendly line, and the honest version of the story says exactly that.</strong></p>
+<p><em>(Source: <a href="https://www.techtimes.com/articles/330432/20261111/gemini-robotics-25-reports-96-success-sorting-mercedes-car-parts-publishes-no-trial-count.htm">TechTimes</a>)</em></p>
+<h2>How to start</h2>
+<ul>
+<li><strong>If you build robots:</strong> read the <strong>DeepMind</strong> post and the <strong>Gemini Robotics</strong> evaluations, and join the waitlist for early access. The interesting work right now is in VLA models, dexterous manipulation, and safety evals like <strong>ASIMOV-Jailbreak</strong>, not in building another arm.</li>
+<li><strong>If you work in a factory:</strong> audit your kitting and prep work, the repetitive sorting and staging nobody likes doing. That is where the first humanoids will show up, not on the skilled line.</li>
+<li><strong>If you are just watching:</strong> follow the denominator, not the headline. The next pilot that publishes its trial count, its failure taxonomy, and its human intervention rate will be the first one worth fully believing.</li>
+</ul>
+<h2>The real pattern</h2>
+<p>Robots are leaving the lab the same way AI left the lab: not with a single breakthrough, but with a demo that works just well enough, in just friendly enough conditions, that the money starts moving before the measurement catches up. The 96 percent is not a lie and it is not a proof. It is a signal that the factory floor is now a software problem, and software problems get solved in public, messily, one pilot at a time.</p>
+<h2>Final thoughts</h2>
+<p>A robot sorted car parts on a live line and the line kept running. That sentence would have sounded like science fiction five years ago, and like a press release two years ago. Today it is a progress report with missing footnotes, which is the most honest kind of progress there is. Keep watching the footnotes. They are where the future actually lives.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
