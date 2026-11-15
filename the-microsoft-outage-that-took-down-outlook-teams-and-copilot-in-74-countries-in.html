@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Microsoft Outage That Took Down Outlook, Teams and Copilot in 74 Countries in 2026 | Rachit Asthana's Articles</title>
+<meta name="description" content="Microsoft 365 went down for more than a day across 74 countries, and it was not a hack. Here is what broke, who it hit, and why the CrowdStrike parallel should worry everyone.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-11-15">2026-11-15</time>
+<h1>The Microsoft Outage That Took Down Outlook, Teams and Copilot in 74 Countries in 2026</h1>
+<p><em>It was not a hack. It was a routine upgrade, and that is the scary part.</em></p>
+<p><img alt="A Microsoft building under a clear blue sky" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-15/microsoft-building.jpg" /></p>
+<p><em>A Microsoft building in Redmond, Washington. Photo: Sammamish Washington.</em></p>
+<p>Let's stop pretending the cloud is always there.</p>
+<p>On Thursday, <strong>Microsoft 365</strong> went down across <strong>74 countries</strong>, and it stayed down for <strong>more than a day</strong>. <strong>Outlook</strong>, <strong>Teams</strong> and <strong>Copilot</strong> all went dark together.</p>
+<p>This article is not about one bad Thursday. It is about what happens when the whole world rents its office from one landlord.</p>
+<h2>1. Thursday, midday: how it unfolded</h2>
+<p>The timeline is short and brutal.</p>
+<ul>
+<li>First reports surfaced around <strong>midday Thursday, November 12</strong>, in the US, when users could not open their <strong>Exchange Online</strong> mailboxes</li>
+<li><strong>Microsoft</strong> first acknowledged the issue at <strong>5:54 pm GMT</strong>, 11:24 pm IST</li>
+<li>The incident records list <strong>EX1550543</strong> for Exchange Online, starting 4:17 pm UTC, and <strong>MO1550821</strong> for the wider Microsoft 365 disruption, starting 6:26 pm UTC</li>
+<li>Services were <strong>fully restored on Saturday, November 14</strong>, more than 24 hours later</li>
+</ul>
+<p>Microsoft's own words on Saturday: "We have completed our efforts to address the underlying issue of the incident and restored service to the remaining impacted customers and regions."</p>
+<p>More than a day without email. In 2026, that is not an inconvenience. That is a shutdown.</p>
+<p><em>(Source: <a href="https://yourstory.com/2026/11/one-outage-millions-affected-what-went-wrong-at-microsoft">YourStory</a>)</em></p>
+<h2>2. 74 countries in one hour</h2>
+<p>Speed is the detail that tells you how centralised everything has become.</p>
+<ul>
+<li>Within an hour of the first problems, outage tracker <strong>Downdetector</strong> had logged reports from <strong>74 countries and territories</strong></li>
+<li>The services hit: <strong>Outlook, Teams, Copilot, OneDrive and SharePoint</strong></li>
+<li>Governments, courts, healthcare services, businesses, airlines and banks, all in the same boat, at the same time</li>
+</ul>
+<p>One company's bad afternoon became 74 countries' bad day. That is not a bug in the system. That is the system.</p>
+<p><em>(Source: <a href="https://www.firstpost.com/tech/microsoft-says-services-fully-restored-after-global-outage-hit-governments-banks-and-airlines-14059984.html">Firstpost</a>)</em></p>
+<h2>3. When email dies, governments start texting</h2>
+<p>This is where the outage stops being a tech story and becomes a civilisation story.</p>
+<ul>
+<li>In <strong>Japan</strong>, government email became completely unavailable, forcing staff to resort to <strong>text messaging</strong> for communications</li>
+<li>The governments of <strong>Japan, Singapore, Australia, Greece, Norway and India</strong> all reported disrupted operations</li>
+<li>In <strong>Britain</strong>, a trial in <strong>Manchester</strong> was halted after technical problems affected court proceedings</li>
+<li>The British government said it was working closely with Microsoft while maintaining contingency arrangements</li>
+</ul>
+<p>Hospitals fell back on phone lines and paper records. Some offices dug out the fax machine.</p>
+<p><em>Italics aside: the richest companies on earth run on email, and email runs on one vendor, and one vendor had a bad upgrade. The fax machine was the backup plan.</em></p>
+<p><em>(Source: <a href="https://www.outlookindia.com/international/microsoft-fixes-24-hour-global-outage-that-silenced-outlook-and-teams-worldwide">Outlook India</a>)</em></p>
+<p><img alt="A dimly lit server room with rows of illuminated racks" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-15/server-room-dark.jpg" /></p>
+<p><em>A dimly lit server room. When the core process that handles secure connections stops, nothing else matters. Photo: GBSower.</em></p>
+<h2>4. It was not a hack, and that matters more</h2>
+<p>Everyone's first guess was a cyberattack. Microsoft ruled it out fast, and the real answer is worse.</p>
+<ul>
+<li>The incident was <strong>"introduced by an issue during an earlier network capacity upgrade that surfaced"</strong> after a recent network change</li>
+<li>Engineers traced part of the fault to a <strong>core process responsible for secure connections</strong> that became overwhelmed and stopped processing requests</li>
+<li>Microsoft said the outage was <strong>"not related to cyber"</strong> or <strong>AI agents</strong>, and apologised on Friday, saying it was <strong>"deeply sorry"</strong></li>
+<li>Restoration was gradual, validating stability at each stage. <strong>Asia Pacific</strong> stabilised first on November 13, followed by Europe and North America</li>
+<li>A full <strong>post-incident report</strong> is promised</li>
+</ul>
+<p>A hacker is an enemy you can fight. A routine capacity upgrade that quietly breaks your core connection process is an enemy that lives inside your own change pipeline.</p>
+<p><em>(Source: <a href="https://www.theguardian.com/technology/2026/nov/14/microsoft-says-services-fully-restored-after-global-outage">The Guardian</a>)</em></p>
+<h2>5. The CrowdStrike parallel nobody wanted</h2>
+<p>We have seen this movie before, and it was also not a hack.</p>
+<ul>
+<li>On <strong>July 19, 2024</strong>, a faulty <strong>CrowdStrike Falcon</strong> update crashed roughly <strong>8.5 million Windows computers</strong> worldwide</li>
+<li><strong>Delta</strong> cancelled more than <strong>7,000 flights over five days</strong>, disrupting around 1.3 million passengers, at a cost of about <strong>$550 million</strong></li>
+<li>In 2025, an <strong>Amazon Web Services</strong> outage disrupted thousands of businesses and took more than 15 hours to resolve</li>
+</ul>
+<p>The Guardian called this week's failure <strong>"one of worst IT failures in years."</strong> The pattern across all three: a routine update, a single point of failure, and a blast radius measured in countries, not customers.</p>
+<p><u>The two biggest IT failures in recent years were both self-inflicted updates, not hackers.</u></p>
+<p><em>(Source: <a href="https://sfg.media/en/a/microsoft-outage-global-dependence-tech-giants/">SFG Media</a>)</em></p>
+<h2>6. Even Copilot went down with the ship</h2>
+<p>Here is the irony that deserves its own section.</p>
+<p><strong>Copilot</strong>, the AI assistant sold as the thing that makes work resilient and effortless, died at exactly the same moment as the email it was supposed to help you manage.</p>
+<ul>
+<li>Your AI assistant lives on the same cloud it is meant to save you from</li>
+<li>When the platform goes, the assistant goes with it, no matter how smart the model is</li>
+<li>The <strong>AI tools</strong> did not cause this outage, Microsoft was clear about that, but they were the first casualty of it</li>
+</ul>
+<p>Every AI productivity pitch assumes the infrastructure underneath is permanent. Thursday proved it is a Tuesday upgrade away from gone.</p>
+<p><em>(Source: <a href="https://www.financialexpress.com/life/technology/microsoft-365-services-fully-restored-company-shares-latest-update/4384428/">Financial Express</a>)</em></p>
+<p><img alt="A modern Microsoft campus building with the company logo" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-15/microsoft-campus.jpg" /></p>
+<p><em>Microsoft's campus in Redmond. The same infrastructure that serves governments and hospitals also serves your Copilot. Photo: Peter Reinold.</em></p>
+<h2>7. One landlord, everybody's office</h2>
+<p>Step back from the incident reports and look at the shape of the thing.</p>
+<ul>
+<li>A handful of providers underpin email, documents, meetings and AI assistance for most of the working world</li>
+<li>Governments, hospitals and courts run on the <strong>same infrastructure</strong> as your startup's standup notes</li>
+<li>The question nobody prices into the contract: <strong>what is your plan B when the landlord's lights go out</strong></li>
+</ul>
+<p>Redundancy used to mean a second server in the next room. Now it means a second vendor, a second continent, and a runbook that works when the tools the runbook describes are all down at once.</p>
+<p><em>(Source: <a href="https://gulfnews.com/technology/companies/microsoft-says-global-outage-fully-resolved-after-disrupting-services-in-over-70-countries-1.500747167">Gulf News</a>)</em></p>
+<h2>How to start</h2>
+<p><strong>If you are an everyday worker:</strong> keep an offline list of your team's phone numbers and your IT helpdesk number. Know where your files live outside the cloud. It takes ten minutes and saves a day.</p>
+<p><strong>If you are a developer or IT lead:</strong> test your failover before you need it, keep a status page habit, and write runbooks that work <strong>without the tools they describe</strong>. If your incident response plan lives in the system that just died, you do not have a plan.</p>
+<p><strong>If you are a founder:</strong> SLA credits are not a business continuity plan. Ask your team one question on Monday: what do we do if Outlook and Teams are both gone until tomorrow?</p>
+<h2>The real pattern</h2>
+<p>The cloud did not fail because it is fragile. It failed because it is centralised. Every efficiency gain from putting the world's office in one place is also a concentration of risk in one place, and the bill for that risk arrives on a random Thursday, all at once, in 74 countries.</p>
+<h2>Final thoughts</h2>
+<p>Nobody hacks the cloud anymore. They do not have to.</p>
+<p>We hand it the keys, schedule the upgrade, and wait for the capacity change to do the job for them. Build your plan B on a quiet day, because the loud ones are already taken.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
