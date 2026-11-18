@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 9 Things Microsoft's 96 Percent of Claude at 5 Percent of the Cost Proves in 2026, and Why Your Copilot Bill Is About to Shrink | Rachit Asthana's Articles</title>
+<meta name="description" content="Microsoft's new coding model does 96 percent of what Claude Opus 5.5 does for 5 percent of the price. The catch is in the fine print, and the fine print is the whole story.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-11-18">2026-11-18</time>
+<h1>The 9 Things Microsoft's 96 Percent of Claude at 5 Percent of the Cost Proves in 2026, and Why Your Copilot Bill Is About to Shrink</h1>
+<p><em>Microsoft did not build a better Claude. It built a cheaper one, and that might matter more.</em></p>
+<p><img alt="Microsoft building" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-18/microsoft-building-hero.jpg" />
+<em>Microsoft's campus. Its own models are now the ones running inside its flagship products. Photo: Peter Reinold</em></p>
+<p>Let's stop pretending the AI race is about who builds the smartest model.</p>
+<p>Microsoft just announced a coding model that does 96 percent of what <strong>Claude Opus 5.5</strong> does for 5 percent of the price, and the most interesting part is not the 96 percent.</p>
+<p>This article is not a list of benchmark scores. It is about what happens when the frontier stops being the product and the price becomes the product.</p>
+<h2>1. The headline number, and what it actually measures</h2>
+<p>At <strong>Ignite 2026</strong> in San Francisco on November 17, <strong>Microsoft</strong> unveiled a family of seven new <strong>MAI</strong> models, led by <strong>MAI Code 2</strong>. The headline claim is precise, so let's quote it precisely: Code 2 delivers 96 percent of <strong>Claude Opus 5.5's</strong> coding performance at 5 percent of its cost, and 98 percent of <strong>GPT-6.1 Sol's</strong> performance at 40 percent of the price.</p>
+<ul>
+<li>The scores are averaged over four benchmarks: <strong>DeepSWE 1.1</strong>, <strong>Terminal Bench 2.1</strong>, <strong>SWE-Atlas</strong> and <strong>FrontierCode v1.1</strong></li>
+<li>The average cost per task: <strong>$0.309</strong> for Code 2, against <strong>$0.761</strong> for GPT-6.1 Sol and <strong>$6.306</strong> for Opus 5.5</li>
+<li>The average scores behind those prices: <strong>63.2 percent</strong> for Code 2, <strong>64.1 percent</strong> for GPT-6.1 Sol, <strong>65.3 percent</strong> for Opus 5.5</li>
+</ul>
+<p><strong>Read that again: the gap between the models is two percentage points, and the gap between the prices is twentyfold.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/383468/why-microsoft-thinks-smaller-cheaper-ai-beat-claude-gpt">Microsoft AI announcement, via Decrypt</a>)</em></p>
+<h2>2. The 50 percent discount hiding inside the 5 percent</h2>
+<p>Here is the part Microsoft would rather you skim. Those prices are calculated at a <strong>50 percent promotional discount</strong>, and the fine print changes the story in a useful way.</p>
+<ul>
+<li>At full price, Code 2 costs about <strong>$0.618 per task</strong>, still roughly <strong>10 percent</strong> of Opus 5.5's $6.306</li>
+<li>Against GPT-6.1 Sol, the full-price picture is less dramatic: $0.618 against $0.761, or about <strong>four-fifths</strong> of the cost</li>
+<li>The prices are <strong>API usage metrics</strong>, not subscription prices, so nobody paying $100 a month for a coding tool is about to pay $5</li>
+</ul>
+<p><strong>The discount flatters the headline, but even without it, the Claude comparison survives. The GPT comparison mostly does not.</strong></p>
+<p><em>(Source: <a href="https://www.zdnet.com/innovation/microsoft-ai-coding-model-rivals-claude-opus-5-5-ignite/">ZDNET</a>)</em></p>
+<h2>3. Microsoft picked the tests</h2>
+<p>Every number in section 1 comes from <strong>Microsoft's own benchmarks</strong>, chosen by Microsoft, and three of the four tests were run on Microsoft's own evaluation platform. The fourth comes from the benchmarking site <strong>Artificial Analysis</strong>. That does not make the numbers false, but it does make them selected.</p>
+<ul>
+<li>Benchmark selection is the oldest trick in the AI marketing book, and every lab does it</li>
+<li><strong>ZDNET's</strong> David Gewirtz, who covered the launch, says he is fairly sure Microsoft is not padding the numbers much, because Microsoft uses these models itself</li>
+<li>There is a second wrinkle: <strong>OpenAI</strong> released <strong>GPT-6.2</strong> on the very same day, so the Sol comparison is already against a generation-old model</li>
+</ul>
+<p><strong>Trust the direction, verify the decimals. Independent testing is the only thing that turns a launch claim into a fact.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/383468/why-microsoft-thinks-smaller-cheaper-ai-beat-claude-gpt">Decrypt</a>)</em></p>
+<p><img alt="Developer coding" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-18/developer-coding.jpg" />
+<em>A developer at work. Microsoft is betting most of this work never needed a frontier model. Photo: Turtle Bay Advisory Services</em></p>
+<h2>4. These models are deliberately not frontier</h2>
+<p>This is the part I respect most, because Microsoft said it out loud. Its own documentation says Code 2 is <strong>explicitly not yet tuned</strong> for harder work such as fundamental science research and very long agentic tasks.</p>
+<ul>
+<li>Code 2 is built for the coding work enterprises actually do every day: taking code to production, deep debugging, changes across many files</li>
+<li>The smaller <strong>Code 2 Flash</strong> targets routine fixes, code explanations and quick edits, pitched against <strong>GPT-6 Luna</strong> at 65 percent of the price and <strong>Claude Haiku 5.5</strong> at 20 percent</li>
+<li>The models reportedly did unusually well on visualization assignments, which suits UI design, graphics and slide production</li>
+</ul>
+<p><strong>Microsoft is not claiming to have beaten the frontier. It is claiming the frontier was overkill for your Tuesday.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/383468/why-microsoft-thinks-smaller-cheaper-ai-beat-claude-gpt">Microsoft AI announcement, via Decrypt</a>)</em></p>
+<h2>5. It is already sitting in your Copilot</h2>
+<p>Launch announcements are cheap. Distribution is the story, and Microsoft has the best distribution in coding: <strong>GitHub Copilot</strong>.</p>
+<ul>
+<li>Code 2 and Code 2 Flash are generally available in <strong>GitHub Copilot</strong>, in the model picker and through <strong>Copilot Fusion</strong></li>
+<li>The models are also rolling out as optional choices in <strong>Microsoft 365</strong> and <strong>Fabric</strong></li>
+<li>Code 2 Flash is in limited-access preview in <strong>Microsoft Foundry</strong>, and it is available on <strong>Copilot Pro</strong>, <strong>Pro+</strong>, <strong>Max</strong>, <strong>Business</strong> and <strong>Enterprise</strong></li>
+</ul>
+<p><strong>You do not need to sign up for anything new. The cheaper model is a dropdown option in the tool you already pay for.</strong></p>
+<p><em>(Source: <a href="https://www.zdnet.com/innovation/microsoft-ai-coding-model-rivals-claude-opus-5-5-ignite/">ZDNET</a>)</em></p>
+<h2>6. The security model nobody is talking about</h2>
+<p>Everyone quoted the coding numbers. Almost nobody quoted <strong>MAI Cyber 2 Flash</strong>, and it might be the more important launch.</p>
+<ul>
+<li>On the <strong>CyberGym-E2E</strong> vulnerability discovery benchmark, Cyber 2 Flash succeeded on <strong>92.3 percent</strong> of evaluated tasks, against <strong>91.5 percent</strong> for <strong>GPT-6 Astra</strong></li>
+<li>It did that at <strong>less than 2 percent</strong> of GPT-6 Astra's cost per task</li>
+<li>The rollout starts in <strong>mid-December</strong>, and Microsoft has not published a comparison against OpenAI's restricted <strong>GPT-6 Cyber</strong> model</li>
+</ul>
+<p><strong>A security model that finds vulnerabilities as well as the best general model, for a fiftieth of the price, changes who can afford to hunt for bugs.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/383468/why-microsoft-thinks-smaller-cheaper-ai-beat-claude-gpt">Decrypt</a>)</em></p>
+<h2>7. The image model that quietly took the lead</h2>
+<p>The family also includes <strong>MAI Image 2.7</strong>, and it walked in with a leaderboard result instead of a press release superlative.</p>
+<ul>
+<li>Image 2.7 leads <strong>Artificial Analysis's</strong> image-editing evaluation by <strong>4 Elo points</strong>, as of November 16</li>
+<li>Microsoft quotes about <strong>$35 per 1,000 images</strong> for Image 2.7 and <strong>$10</strong> for its Flash version</li>
+<li>That is roughly <strong>one-fifth the price</strong> of <strong>GPT Image 2.6 Sunburst</strong> at maximum settings</li>
+</ul>
+<p><strong>Image editing is the quietest front in the model wars, and Microsoft just took it on price without anyone noticing.</strong></p>
+<p><em>(Source: <a href="https://decrypt.co/383468/why-microsoft-thinks-smaller-cheaper-ai-beat-claude-gpt">Decrypt</a>)</em></p>
+<p><img alt="Microsoft Ignite" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-18/microsoft-ignite.jpg" />
+<em>Microsoft Ignite 2026. Seven models, one message: good enough, far cheaper. Photo: ZDNET</em></p>
+<h2>8. Work Flash, or when coding agents get office jobs</h2>
+<p>The sleeper in the lineup is <strong>MAI Work Flash</strong>, derived from Code 2 Flash and aimed squarely at office work rather than code.</p>
+<ul>
+<li>It generates formulas in <strong>Excel</strong>, works with documents and instructions in <strong>Word</strong>, and tracks decisions and extracts useful information from <strong>Teams</strong></li>
+<li>The logic is simple: coding agents turned out to be training grounds for work agents, and Microsoft is following <strong>ChatGPT Work</strong> and <strong>Claude Cowork</strong> into the same territory</li>
+<li><strong>Satya Nadella</strong> singled out the Code 2 line and the Cyber model in his opening keynote, and <strong>Microsoft AI</strong> chief <strong>Mustafa Suleyman</strong> told <strong>Axios</strong> that specialization concentrates more relevant knowledge into a model of a given size</li>
+</ul>
+<p><strong>The coding model was the demo. The office model is the business.</strong></p>
+<p><em>(Source: <a href="https://www.zdnet.com/innovation/microsoft-ai-coding-model-rivals-claude-opus-5-5-ignite/">ZDNET</a>)</em></p>
+<h2>9. The real customer is Microsoft itself</h2>
+<p>Step back and ask who benefits most from a model that does 96 percent of the job for 5 percent of the cost. The answer is the company paying the biggest AI bills in the world, which is Microsoft.</p>
+<ul>
+<li>Microsoft has a <strong>multi-billion-dollar investment in OpenAI</strong> dating back to 2023 and built many of its products around OpenAI's technology</li>
+<li>Every routine request its products send to <strong>OpenAI</strong> or <strong>Anthropic</strong> carries a token fee to an outside provider, and Microsoft is now its own alternative supplier</li>
+<li><strong>ZDNET</strong> puts it bluntly: Microsoft itself may be its biggest AI-model customer, and these models buy it vertical integration and control</li>
+</ul>
+<p><strong>Microsoft did not just launch a product. It launched a way to stop paying rent on its own house.</strong></p>
+<p><em>(Source: <a href="https://www.zdnet.com/innovation/microsoft-ai-coding-model-rivals-claude-opus-5-5-ignite/">ZDNET</a>)</em></p>
+<h2>How to start</h2>
+<ul>
+<li><strong>If you code:</strong> open <strong>GitHub Copilot</strong>, pick Code 2 in the model picker, and run it on your most boring tasks first, refactors, multi-file changes, test writing. That is where the savings live.</li>
+<li><strong>If you manage a team:</strong> audit what share of your AI spend is routine coding versus frontier reasoning, then move the routine half and measure the bill for a month.</li>
+<li><strong>If you just watch the industry:</strong> watch two things, whether the 50 percent promo price becomes the real price when it expires, and whether <strong>Anthropic</strong> and <strong>OpenAI</strong> answer with their own cheaper tiers. Both will tell you if this was a launch or a price war.</li>
+<li><strong>If you build products:</strong> the lesson is not "use Code 2", it is "price is now a feature". Your users will do the same math Microsoft just did.</li>
+</ul>
+<h2>The real pattern</h2>
+<p>The frontier model was the product for three years. Now the product is the price. Microsoft is betting that most coding work does not need the smartest model in the world, it needs a good enough model at a tenth of the cost, and the moment one big vendor proves that, every other vendor has to answer it. The race did not get smarter. It got cheaper, and cheaper is harder to beat.</p>
+<h2>Final thoughts</h2>
+<p>Claude and GPT are still the frontier. But the frontier is no longer the only place the money is. The next year of AI will be fought in the gap between 96 percent and 100 percent, and that gap now costs 95 percent less than it used to. Good enough just became the most dangerous product in AI.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
