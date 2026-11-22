@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 9 Things Inkling 2 Mini Proves in 2026, and Why Your Laptop Just Became an AI Lab | Rachit Asthana's Articles</title>
+<meta name="description" content="Thinking Machines just shipped a 26B model that runs offline on a 32GB MacBook, out-codes bigger rivals, and powers 20 AI villagers on one laptop. Here is the loop trick behind it, the benchmarks, and the one catch nobody is hiding.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-11-22">2026-11-22</time>
+<h1>The 9 Things Inkling 2 Mini Proves in 2026, and Why Your Laptop Just Became an AI Lab</h1>
+<p><em>A 26 billion parameter model runs offline on a MacBook, and the cloud just lost its monopoly on serious AI.</em></p>
+<p><img alt="Thinking Machines' launch slide for Inkling 2 Mini" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-22/inkling-hero.jpg" />
+<em>Thinking Machines' launch slide for Inkling 2 Mini. The model runs on a laptop, not a data center. Photo: Thinking Machines</em></p>
+<p>Let's stop pretending serious AI lives in the cloud.</p>
+<p>On Friday, November 20, <strong>Thinking Machines Lab</strong> shipped a model that runs on the laptop sitting on your desk right now, offline, in airplane mode, while building a flight simulator.</p>
+<p>This article is not about another benchmark chart. It is about the moment the best AI stopped needing a data center.</p>
+<h2>1. The loop trick that makes 26 billion parameters act bigger</h2>
+<ul>
+<li><strong>Inkling 2 Mini</strong> is a 24 layer mixture of experts model with <strong>26.4 billion total parameters</strong> and only <strong>3.4 billion active</strong> per token</li>
+<li>The middle 12 layers run three times for every token, while the first six and last six run once, so the model performs <strong>48 layer applications</strong> from just 24 stored layers</li>
+<li>That looping lifts the effective active count to <strong>5.4 billion parameters per token</strong>, without adding a single gram of memory</li>
+</ul>
+<p><strong>It thinks longer without getting fatter, and that is the whole idea.</strong></p>
+<p><em>(Source: <a href="https://thinkingmachines.ai/news/inkling-2-mini/">Thinking Machines</a>)</em></p>
+<h2>2. It runs on hardware you already own</h2>
+<ul>
+<li>The whole model fits in about <strong>20GB</strong>, so it runs on <strong>Apple silicon Macs with 32GB or more</strong> of unified memory through <strong>Ollama</strong></li>
+<li><strong>Nvidia's DGX Spark</strong> desktop AI computer is officially supported too, and other GPUs work with 32GB or more of VRAM</li>
+<li>It takes text and image inputs, answers in text, and holds a context window of up to <strong>1 million tokens</strong></li>
+</ul>
+<p><strong>The entry ticket to frontier class local AI is now a laptop, not a server rack.</strong></p>
+<p><em>(Source: <a href="https://huggingface.co/thinkingmachines/Inkling-2-Mini">Hugging Face model card</a>)</em></p>
+<p><img alt="A diagram of Inkling 2 Mini's looped architecture" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-22/inkling-architecture.jpg" />
+<em>The looped architecture: the prelude runs once, the middle blocks run three times, the final block runs once. Photo: Thinking Machines</em></p>
+<h2>3. The airplane demo is the whole story</h2>
+<ul>
+<li><strong>Thinking Machines</strong> researchers took the model on a flight, switched on airplane mode, and had it build a <strong>playable flight simulator in a few minutes</strong> on an M5 Pro MacBook Pro with 48GB</li>
+<li>No Wi-Fi, no API key, no cloud bill ticking in the background while it worked</li>
+<li>The demo is a stunt, but it is an honest one: the model really was offline, on a consumer laptop, doing real agentic coding</li>
+</ul>
+<p><u>When your AI works at 35,000 feet with no internet, the cloud stops being a requirement and becomes a choice.</u></p>
+<p><em>(Source: <a href="https://wccftech.com/thinking-machines-unveils-inkling-2-mini-a-powerful-26b-ai-model-that-runs-locally-on-macbooks-with-just-32gb-ram/">WCCFTech</a>)</em></p>
+<h2>4. It out-codes models much bigger than it</h2>
+<ul>
+<li>On <strong>DeepSWE v1.1</strong> it scored <strong>48.2%</strong>, against <strong>42.2%</strong> for Qwen3.8-27B</li>
+<li>On <strong>SWE-bench Pro v2 Hard</strong> it hit <strong>77.9%</strong>, beating the same rival's <strong>73.8%</strong>, and it scored <strong>79.2%</strong> on <strong>SWE-bench Verified</strong></li>
+<li>Its <strong>Artificial Analysis Intelligence Index</strong> score is <strong>20.1</strong>, competitive with considerably larger models</li>
+</ul>
+<p>These are company reported numbers, so treat them as a claim, not a verdict. But the gap is wide enough that independent testers will confirm or kill it fast.</p>
+<p><em>(Source: <a href="https://wccftech.com/thinking-machines-unveils-inkling-2-mini-a-powerful-26b-ai-model-that-runs-locally-on-macbooks-with-just-32gb-ram/">WCCFTech</a>)</em></p>
+<h2>5. Twenty villagers, one MacBook</h2>
+<ul>
+<li><strong>Thinkyville</strong> is a tiny pixel town where the same model powers all <strong>20 villagers</strong> on a single offline MacBook</li>
+<li>The villagers plan their days, talk to each other, and respond to the player, all managed by <strong>Inkling 2 Mini</strong> running locally</li>
+<li>This is the part that matters for builders: one small model running <strong>many persistent agents at once</strong>, without a single API call</li>
+</ul>
+<p><strong>Persistent agents used to need a data center. Now they need a laptop and a charger.</strong></p>
+<p><em>(Source: <a href="https://thinkingmachines.ai/news/inkling-2-mini/">Thinking Machines</a>)</em></p>
+<h2>6. The efficiency number nobody is talking about</h2>
+<ul>
+<li>On <strong>Stanford's intelligence per joule benchmark</strong> running on a DGX Spark, it scored <strong>0.703</strong>, against <strong>0.430</strong> for Qwen3.6-35B and <strong>0.159</strong> for Gemma-4-26B</li>
+<li><strong>VentureBeat</strong> reports it ties <strong>Alibaba's</strong> dense 27B flagship on aggregate intelligence while running roughly <strong>four times faster and six times cheaper</strong> per task</li>
+<li>The trick is partly in the training: most weights were trained natively in <strong>4-bit NVFP4</strong> precision on <strong>Nvidia's GB300 Grace Blackwell Ultra</strong>, with the last four layers in <strong>8-bit MXFP8</strong>, so nothing is lost to post training quantization</li>
+</ul>
+<p><strong>Benchmarks tell you how smart a model is. Efficiency tells you whether you can afford to keep it running.</strong></p>
+<p><em>(Source: <a href="https://venturebeat.com/technology/thinking-machines-wows-with-inkling-2-mini-looped-transformer-model-that-runs-locally-on-laptops">VentureBeat</a>)</em></p>
+<h2>7. Open weights, Apache 2.0, and the number one spot on Hugging Face</h2>
+<ul>
+<li>The weights are open under the <strong>Apache 2.0</strong> license, downloadable on <strong>Hugging Face</strong>, where it became the <strong>number one trending model</strong> with 1,649 likes within a day</li>
+<li>Its bigger sibling, <strong>Inkling 2 Small</strong>, is a 594 billion parameter model. Mini is the small one that escaped the data center</li>
+<li>It ships with day one support in <strong>Ollama</strong>, <strong>llama.cpp</strong> GGUF quants via <strong>Unsloth</strong>, <strong>MLX</strong>, <strong>SGLang</strong>, and <strong>vLLM</strong>, plus inference and fine tuning on <strong>Thinking Machines' Tinker</strong> platform</li>
+</ul>
+<p><strong>Open weights plus local hardware is the combination the cloud giants were hoping would stay slow.</strong></p>
+<p><em>(Source: <a href="https://huggingface.co/thinkingmachines/Inkling-2-Mini">Hugging Face model card</a>)</em></p>
+<p><img alt="Inkling 2 Mini building a flight simulator offline on a MacBook" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-22/inkling-airplane.jpg" />
+<em>A MacBook Pro in airplane mode, running Inkling 2 Mini offline while it builds a flight simulator. Photo: Thinking Machines</em></p>
+<h2>8. The catch: it thinks without showing its work</h2>
+<ul>
+<li>Looped transformers do extra reasoning <strong>inside</strong> the model, without writing down every step, which makes their thinking harder to monitor</li>
+<li><strong>Thinking Machines</strong> tested this openly with a variable loop research model, and found the no chain of thought task horizon rose from <strong>16 seconds with one pass to 37 seconds with three</strong></li>
+<li>The lab says the model's written reasoning stayed understandable, with no meaningful loss of monitorability at this scale, and it partnered with the <strong>National Deep Inference Fabric</strong> and <strong>Goodfire</strong> to study it further</li>
+<li>The honest limits: it is weaker on <strong>complex multi-turn conversations</strong> and instructions with <strong>many constraints</strong></li>
+</ul>
+<p><strong>A model that reasons silently is powerful and slightly unnerving, and the lab deserves credit for publishing the worry instead of hiding it.</strong></p>
+<p><em>(Source: <a href="https://wccftech.com/thinking-machines-unveils-inkling-2-mini-a-powerful-26b-ai-model-that-runs-locally-on-macbooks-with-just-32gb-ram/">WCCFTech</a>)</em></p>
+<h2>9. How to start: run it tonight</h2>
+<ul>
+<li><strong>If you have a 32GB Mac:</strong> install <strong>Ollama</strong> and pull the model, then point your coding agent at localhost instead of an API</li>
+<li><strong>If you want the smallest footprint:</strong> grab the 4-bit GGUF quant from <strong>Unsloth</strong> and serve it with <strong>llama.cpp</strong></li>
+<li><strong>If you build agents:</strong> try running two or three persistent agents on the same machine, and watch what breaks first, memory or your patience</li>
+<li><strong>If you benchmark:</strong> run your own coding tasks against it before believing any chart, including the ones in this article</li>
+</ul>
+<p><strong>The cheapest way to understand local AI is to run it. Tonight, that costs zero dollars and one download.</strong></p>
+<p><em>(Source: <a href="https://huggingface.co/thinkingmachines/Inkling-2-Mini">Hugging Face model card</a>)</em></p>
+<p><img alt="Thinkyville, a pixel town where 20 villagers are all powered by Inkling 2 Mini" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-22/inkling-thinkyville.jpg" />
+<em>Thinkyville: 20 autonomous villagers, one offline MacBook, zero API calls. Photo: Thinking Machines</em></p>
+<h2>The real pattern</h2>
+<p>Every AI lab spent years arguing that bigger models need bigger data centers. Thinking Machines just showed that a clever architecture can trade size for time, looping the same layers instead of stacking more of them, and suddenly the frontier fits in 20GB. The pattern is not that small beat big. It is that the constraint moved from hardware you rent to hardware you already own, and that changes who gets to build.</p>
+<h2>Final thoughts</h2>
+<p>Your laptop was always a computer. Now it is an AI lab.</p>
+<p><strong>Inkling 2 Mini</strong> is not the end of cloud AI, but it is the end of the excuse that serious AI needs the cloud. Download it, run it offline, and see what your own machine can do when nobody is watching the meter.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
