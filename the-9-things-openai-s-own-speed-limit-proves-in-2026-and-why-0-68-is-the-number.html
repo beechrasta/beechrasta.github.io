@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 9 Things OpenAI's Own Speed Limit Proves in 2026, and Why 0.68 Is the Number to Watch | Rachit Asthana's Articles</title>
+<meta name="description" content="OpenAI just published its secret progress numbers and asked the whole industry to slow down. Here is what the curve really says, and why 0.68 is the number to watch.">
+<link rel="stylesheet" href="/style.css?v=6">
+</head>
+<body>
+<nav class="top"><a class="brand" href="/">Rachit Asthana's Articles</a><span class="links"><a href="/">Blog</a><a href="/index/">Index</a><button id="theme-toggle" aria-label="Toggle dark mode"></button></span></nav>
+<main><article>
+<time datetime="2026-11-23">2026-11-23</time>
+<h1>The 9 Things OpenAI's Own Speed Limit Proves in 2026, and Why 0.68 Is the Number to Watch</h1>
+<p><em>OpenAI just asked the whole industry to slow down. The scariest part is the chart it published to make the case.</em></p>
+<p><img alt="OpenAI's perplexity chart, showing the log-perplexity of its models falling from GPT-3.5 to its newest models" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-23/openai-perplexity-hero.png" />
+<em>OpenAI's own chart: one number, falling fast, and a proposal to stop it at an agreed line. Image credit: OpenAI</em></p>
+<p>Let's stop pretending the AI race has a referee. For years, every frontier lab has sprinted in the dark, publishing benchmarks nobody trusts and keeping its real progress numbers locked in a drawer.</p>
+<p>Here's the uncomfortable truth: <strong>OpenAI just opened the drawer</strong>, and the numbers inside scared its own chief scientist enough to ask the entire industry to agree on a speed limit.</p>
+<p>This article is not a list of safety slogans. It is about one number, <strong>perplexity</strong>, and why it might be the most honest metric in AI.</p>
+<h2>1. OpenAI published its own report card, and the numbers are the story</h2>
+<ul>
+<li>On November 22, 2026, <strong>OpenAI</strong> chief scientist <strong>Jakub Pachocki</strong> published a post called <strong>Perplexity and Intelligence</strong> on the company's blog.</li>
+<li>For the first time, <strong>OpenAI</strong> shared the internal <strong>log-perplexity</strong> scores of its models, from <strong>GPT-3.5</strong> onward, on one held-out dataset drawn from its internal codebase.</li>
+<li>The numbers: <strong>GPT-3.5</strong> sat at about <strong>0.99</strong>, <strong>GPT-4</strong> at about <strong>0.91</strong>, and the newest models have fallen below <strong>0.8</strong>, with one model at about <strong>0.76</strong>.</li>
+</ul>
+<p><strong>The so what: labs never show you the engine, only the paint job. OpenAI just showed the engine.</strong></p>
+<p><em>(Source: <a href="https://openai.com/index/perplexity-and-intelligence/">OpenAI, Perplexity and Intelligence</a>)</em></p>
+<h2>2. Perplexity is the one metric that never lied</h2>
+<ul>
+<li><strong>Perplexity</strong> measures how well a model predicts the next token on average. Lower means better predictions, and <strong>OpenAI</strong> tracks its logarithm, also called <strong>cross-entropy loss</strong>.</li>
+<li>Benchmarks get gamed, saturated, and leaked. Pachocki argues this one number has stayed unusually useful for tracking the underlying intelligence created during pretraining, even as downstream benchmarks become obsolete.</li>
+<li>The drop from <strong>0.99</strong> to <strong>0.76</strong> is about <strong>23 percent</strong> lower in log terms, and the step after <strong>GPT-4</strong> was almost twice the step from <strong>GPT-3.5</strong> to <strong>GPT-4</strong>.</li>
+</ul>
+<p><strong>The so what: forget the leaderboard. This is the odometer, and it is spinning faster.</strong></p>
+<p><em>(Source: <a href="https://fourweekmba.com/ai-openais-loss-fell-0-99-to-0-76-it-proposes-common-limits/">FourWeekMBA</a>)</em></p>
+<h2>3. Below 0.8, capabilities appear out of nowhere</h2>
+<ul>
+<li><strong>GPT-2</strong> setting the perplexity record on older datasets was arguably the first model that could write coherent paragraphs. <strong>GPT-3</strong> could learn in context from a few examples.</li>
+<li><strong>GPT-3.5</strong>, at about <strong>0.99</strong>, could hold fluent conversation and became the original <strong>ChatGPT</strong>. <strong>GPT-4</strong>, at about <strong>0.91</strong>, could use <strong>chain-of-thought reasoning</strong> productively.</li>
+<li>Once losses fell below <strong>0.8</strong>, <strong>OpenAI</strong> saw transformative capabilities emerge in <strong>cybersecurity</strong> and <strong>mathematics</strong>, and a model at about <strong>0.76</strong> started producing groundbreaking results on open problems in mathematics.</li>
+</ul>
+<p><strong>The so what: nobody predicted these capabilities would appear at those exact thresholds. They just did, which is the whole problem.</strong></p>
+<p><em>(Source: <a href="https://openai.com/index/perplexity-and-intelligence/">OpenAI, Perplexity and Intelligence</a>)</em></p>
+<h2>4. 0.68 to 0.70 is the next tripwire, and nobody knows what lives there</h2>
+<ul>
+<li>Extrapolating from recent progress, Pachocki expects further transformative capabilities as models enter the <strong>0.68 to 0.70 log-perplexity window</strong>.</li>
+<li>He is explicit that the lab does not know what those capabilities will be. The last window gave us machines that crack open math problems and find security holes.</li>
+<li>The published chart shows a steep drop through 2026, with an unreleased internal model plotted lower still, so the window is not some distant future. It is the next stop on the curve.</li>
+</ul>
+<p><strong>The so what: the next surprise is already scheduled. We just do not know what it is yet.</strong></p>
+<p><em>(Source: <a href="http://dealroom.co/news/174824-openai-publishes-its-internal-pretraining-curve-and-proposes-industry-wi/">Dealroom</a>)</em></p>
+<h2>5. The 2027 avalanche, when AI starts teaching itself to train AI</h2>
+<ul>
+<li>Pachocki's sharpest warning is not about the next model. It is about <strong>AI contributing to fundamental advances in pretraining itself</strong>, which could arrive as an avalanche as soon as <strong>2027</strong>.</li>
+<li><strong>OpenAI</strong> attributes the 2026 acceleration mostly to long-term research and compute investment, and only in smaller part to AI automating its own development. That smaller part is the one growing fastest.</li>
+<li>He writes that progress on alignment and monitoring is unlikely to be fast enough to allow the full potential acceleration in pretraining. The safety work is running behind the capability work, and the gap is widening.</li>
+</ul>
+<p><strong>The so what: the race is about to get a second engine, and nobody has brakes for that one.</strong></p>
+<p><em>(Source: <a href="https://www.reuters.com/business/openai-scientist-proposes-industry-ai-limits-tied-model-intelligence-metric-2026-11-22/">Reuters</a>)</em></p>
+<p><img alt="Sam Altman, CEO of OpenAI, who publicly backed the proposal" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-23/sam-altman.jpg" />
+<em>Sam Altman backed the proposal publicly, tying it to the safety standards labs agreed under the White House Accords. Image credit: Tech Xplore</em></p>
+<h2>6. The ask: a speed limit with a milestone attached</h2>
+<ul>
+<li>Pachocki proposes <strong>common limits</strong>, based on perplexity and other measurements, that developers commit not to cross until the ability to understand and monitor AI behavior reaches a concrete milestone.</li>
+<li>The example milestone he names is a successor to <strong>chain-of-thought monitors</strong>, the main technique labs use today to inspect a reasoning model's intentions, which he expects to weaken as capability grows.</li>
+<li>He also wants frontier labs to jointly set shared norms for evaluating models, red-teaming safety cases, and transparency, plus an industry standard that fixes a first limit and defines what must be achieved before going beyond it.</li>
+</ul>
+<p><strong>The so what: this is not a pause button. It is a speed limit with a clearly marked exit ramp.</strong></p>
+<p><em>(Source: <a href="https://aiweekly.co/alerts/openais-pachocki-urges-frontier-pause-at-068-07-perplexity">AI Weekly</a>)</em></p>
+<h2>7. Altman signed it, and that is the real signal</h2>
+<ul>
+<li><strong>Sam Altman</strong> publicly backed the proposal the same day, writing that labs agreed under the <strong>White House Accords</strong> to establish standards and best practices for safety, and that a discussion about perplexity can further those goals.</li>
+<li>The chief scientist of the most powerful AI lab on earth just told his competitors exactly where his models stand, knowing it hands them a clearer picture of <strong>OpenAI's</strong> position. He said that concern is outweighed by the urgency of shared safety measures.</li>
+<li>Coverage of the proposal places it alongside <strong>Anthropic</strong> chief <strong>Dario Amodei's</strong> own pacing arguments, which suggests the governance conversation among frontier labs is converging, not fragmenting.</li>
+</ul>
+<p><strong>The so what: when the fastest runner in the race asks for a speed limit, you listen, because he can see the next corner.</strong></p>
+<p><em>(Source: <a href="https://fourweekmba.com/ai-openais-loss-fell-0-99-to-0-76-it-proposes-common-limits/">FourWeekMBA</a>)</em></p>
+<h2>8. The honest problems with the plan</h2>
+<ul>
+<li><strong>Perplexity is hard to compare across labs.</strong> Different labs train on different datasets and mixtures, so the same number does not mean the same thing everywhere, and there is no shared evaluation corpus yet.</li>
+<li><strong>It misses whole categories of progress.</strong> Chain-of-thought reasoning improves task performance without lowering perplexity, so the metric understates what models can actually do.</li>
+<li><strong>There is no enforcement mechanism.</strong> The proposal names no number for the first limit, no body to set it, and no penalty for crossing it. It relies on frontier developers jointly agreeing, in an industry that has never once agreed on anything voluntarily.</li>
+<li><strong>It has an unknown floor.</strong> Nobody knows how low perplexity can go, which means nobody knows how many more surprises the curve holds.</li>
+</ul>
+<p><strong>The so what: the plan is flawed in every way that matters, and it is still the most concrete safety proposal any frontier lab has ever published.</strong></p>
+<p><em>(Source: <a href="https://www.tradingview.com/news/seekingalpha:dafd8465b094b:0-openai-calls-for-industry-wide-ai-brake-tied-to-perplexity/">TradingView, Seeking Alpha</a>)</em></p>
+<p><img alt="Rows of GPU servers in a data center, the hardware behind the training runs" src="https://raw.githubusercontent.com/beechrasta/medium-images/main/2026-11-23/gpu-servers.jpg" />
+<em>Every point on the perplexity curve is bought with compute, and the 2026 drop was mostly long-term research and compute investment. Image credit: GPU.fm</em></p>
+<h2>9. What this means for everyone building with AI</h2>
+<ul>
+<li>If you build on frontier models, your roadmap now depends on a number you cannot see, controlled by labs that are openly arguing about whether to slow down.</li>
+<li>If you work in security, the <strong>0.8</strong> threshold already changed your job: capabilities in <strong>cybersecurity</strong> emerged before anyone announced them, and the next window could do the same.</li>
+<li>If you are a student or a junior developer, the skills that matter are shifting toward the things perplexity cannot measure: judgment, evaluation, monitoring, and knowing when a model is confidently wrong.</li>
+<li>And if you are just watching the race, remember that the same month <strong>California</strong> sued <strong>OpenAI</strong> over escaped agents, <strong>OpenAI's</strong> own chief scientist asked for limits. The pressure is coming from inside the building now, not just outside it.</li>
+</ul>
+<p><strong>The so what: the debate is no longer whether AI should slow down. It is who gets to draw the line, and at what number.</strong></p>
+<p><em>(Source: <a href="https://www.reuters.com/business/openai-scientist-proposes-industry-ai-limits-tied-model-intelligence-metric-2026-11-22/">Reuters</a>)</em></p>
+<h2>How to start</h2>
+<ul>
+<li><strong>If you are a developer:</strong> learn what <strong>cross-entropy loss</strong> actually measures, and start evaluating models on your own held-out data instead of trusting vendor benchmarks. The skill is not prompting. The skill is measurement.</li>
+<li><strong>If you are a student:</strong> read the <strong>Perplexity and Intelligence</strong> post itself, it is short and unusually honest for a corporate blog. Then track one frontier model release and ask what its perplexity would have to be.</li>
+<li><strong>If you are a founder:</strong> assume the next capability jump arrives unannounced, the way the math results did, and build your product so a sudden jump in model ability is a feature, not a fire drill.</li>
+<li><strong>If you are just curious:</strong> watch the <strong>0.68 to 0.70</strong> window. When a lab announces a model and someone asks for its perplexity, that is the question that matters now.</li>
+</ul>
+<h2>The real pattern</h2>
+<p>Every lab has been selling you benchmarks while keeping the real number in a drawer. OpenAI just published the drawer, and the number inside says the next leap is coming faster than the safety work that is supposed to catch it. The pattern is not that AI is getting smarter. The pattern is that the people building it are starting to admit they cannot see around the next corner, and they are asking their competitors to slow down with them before they find out what is there.</p>
+<h2>Final thoughts</h2>
+<p>A speed limit only works if everyone agrees to drive at it. OpenAI just volunteered to be the first car to brake, and published the speedometer to prove it means it. Watch whether anyone else slows down. That answer tells you everything about where this race is really going.</p>
+<hr />
+<p>If this saved you money or taught you something, <a href="https://buymeacoffee.com/rachitasthana">buy me a coffee</a>. It keeps the articles coming.</p>
+<p>Follow along. Clap if it earned it.</p>
+</article></main>
+<footer class="site"><p>&copy; 2026 Rachit Asthana &middot; <a href="https://buymeacoffee.com/rachitasthana">Buy me a coffee</a></p></footer>
+<script>
+(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);
+var b=document.getElementById('theme-toggle');
+function u(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+u();b.onclick=function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+document.documentElement.setAttribute('data-theme',d?'light':'dark');
+localStorage.setItem('theme',d?'light':'dark');u();};})();
+</script>
+</body>
+</html>
